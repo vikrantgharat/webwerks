@@ -1,0 +1,160 @@
+$lLengthNum: (88) (320) (285) (250) (280) (260) (125) (185) (220);
+
+@each $lLength in $lLengthNum {
+    $i: index($lLengthNum, $lLength);
+	@keyframes point#{$i}LineAnim {
+      from {stroke-dashoffset: #{$lLength};}
+      to {stroke-dashoffset: 0;}
+    }
+}
+@mixin lineLength($LL){
+    stroke-dasharray: $LL;
+    stroke-dashoffset: $LL;
+}
+
+@keyframes dot {
+  from {opacity : 0;}
+  to {opacity : 1;}
+}
+
+@each $lLength in $lLengthNum {
+  $i: index($lLengthNum, $lLength);
+  	.point#{$i}{
+      position: absolute;
+      z-index: 15;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 62px;
+      span{
+          display: block;
+          margin: 10px 0;
+          font-size: 18px;
+      }
+      .path {
+          @include lineLength(#{$lLength});
+          animation: point#{$i}LineAnim 0.5s linear #{$i - 0.5}s forwards;
+      }
+      .topRect{
+          opacity: 0;
+          animation: dot 0.1s linear #{$i + 0.1}s forwards;
+      }
+      .point#{$i}-contentWrap{
+          opacity: 0;
+          animation: dot 0.3s linear #{$i + 0.2}s forwards;
+      }
+  }
+}
+.pointContent > span{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    margin-left: 5px;
+    line-height: normal;
+    margin-top: 8px;
+}
+.point1{
+    top: -90px;
+}
+.point2{
+    left: 433px;
+    top: 98px;
+    .point2-contentWrap{
+        position: absolute;
+        top: -70px;
+        right: -145px;
+    }
+}
+.point3{
+    left: 476px;
+    top: 278px;
+    .point3-contentWrap{
+        position: absolute;
+        top: -70px;
+        right: -135px;
+    }
+}
+.point4{
+    left: 480px;
+    top: 390px;
+    .point4-contentWrap{
+        position: absolute;
+        top: -25px;
+        right: -205px;
+    }
+}
+.point5{
+    left: 423px;
+    top: 470px;
+    .point5-contentWrap{
+        position: absolute;
+        top: 30px;
+        right: -190px;
+    }
+}
+.point6{
+    left: 49px;
+    top: 160px;
+    .point6-contentWrap{
+        position: absolute;
+        top: -70px;
+        right: 140px;
+        min-width: 210px;
+        > span{
+            text-align: right;
+            margin-right: 8px;
+            margin-left: 0;
+        }
+    }
+}
+.point7{
+    left: 73px;
+    top: 290px;
+    .point7-contentWrap{
+        position: absolute;
+        top: -23px;
+        right: 135px;
+        min-width: 185px;
+        > span{
+            text-align: right;
+            margin-right: 8px;
+            margin-left: 0;
+        }
+    }
+}
+.point8{
+    left: 40px;
+    top: 380px;
+    .point8-contentWrap{
+        position: absolute;
+        top: -5px;
+        right: 192px;
+        min-width: 210px;
+        > span{
+            text-align: right;
+            margin-right: 8px;
+            margin-left: 0;
+        }
+    }
+}
+.point9{
+    left: 62px;
+    top: 450px;
+    .point9-contentWrap{
+        position: absolute;
+        top: 95px;
+        right: 95px;
+        min-width: 210px;
+        > span{
+            text-align: right;
+            margin-right: 8px;
+            margin-left: 0;
+        }
+    }
+}
+
+.serverBgCircles > [class*='point']{
+    display: none;
+}
+.serverBgCircles > [class*='point'].active{
+    display: block;
+}

@@ -1,0 +1,208 @@
+/*************our-services*****************/
+section.our-services{
+    background: url("../../src/img/about/timeline-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 0 0 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+section.our-services{
+    .serivces-content{
+        position: relative;
+        margin: 160px 0;
+        .owl-item {
+            display: table;
+        }
+
+        .owl-carousel .item {
+          height: auto;
+          display: table-cell;
+          vertical-align: middle;
+          text-align: center;
+          img{
+            width: auto;
+            display: inline-block;
+          }
+        }
+        .animated  {
+          -webkit-animation-duration : 3s  ;
+          animation-duration : 3s  ;
+
+          -webkit-animation-delay : 500ms  ;
+          animation-delay : 500ms  ;
+        }
+
+        .animate-out {
+          -webkit-animation-delay : 0ms  ;
+          animation-delay : 0ms  ;
+        }
+
+        .owl-dots{
+            position: absolute;
+            left: -100px;
+            top: 0;
+            &:before {
+                content: '';
+                border: 1px solid #eee;
+                position: absolute;
+                height: 100%;
+                top: -40%;
+                left: 13px;
+                z-index: -1;
+            }
+            &:after {
+                content: '';
+                border: 1px solid #eee;
+                position: absolute;
+                height: 100%;
+                bottom: -44%;
+                left: 13px;
+                z-index: -1;
+            }
+            .owl-dot{
+                margin-bottom: 40px;
+                position: relative;
+                &.active{
+                    span{
+                        position: relative;
+                        background: transparent !important;
+                    }
+                    &:after{
+                        right: -5px !important;
+                    }
+                    &:before{
+                        content: attr(data-slide-content);
+                        position: absolute;
+                        left: 50px;
+                        top: -5px;
+                        font-size: 20px;
+                        color: #555;
+                        white-space: nowrap;
+                    }
+                }
+                span {
+                    width: 15px;
+                    height: 15px;
+                    margin: 5px 7px;
+                    background: #D6D6D6;
+                    display: block;
+                    -webkit-backface-visibility: visible;
+                    transition: opacity .2s ease;
+                    border-radius: 30px;
+                }
+            }
+
+            .owl-dot:nth-child(even) span{
+                background: radial-gradient(#06619c 25%, #4495c9 20%, #dcf0fd 50%);
+            }
+
+            .owl-dot:nth-child(odd) span{
+                background: radial-gradient(#ffc000 25%, #fbe08f 20%, #fef8e6 50%);
+            }
+            .owl-dot{
+                &:after{
+                    content: "";
+                    width: 35px;
+                    position: absolute;
+                    right: -73px;
+                    background-repeat: no-repeat !important;
+                    top: -10px;
+                }
+            }
+            .owl-dot:first-child{
+                &:after{
+                    background: url(../../src/img/services/cloud-services.png);
+                    content: "";
+                    height: 23px;
+                }
+            }
+            .owl-dot:nth-child(2){
+                &:after{
+                    background: url(../../src/img/services/email-services.png);
+                    content: "";
+                    height: 25px;
+                }
+            }
+            .owl-dot:nth-child(3){
+                &:after{
+                    background: url(../../src/img/services/firewall-services.png);
+                    content: "";
+                    height: 25px;
+                }
+            }
+            .owl-dot:nth-child(4){
+                &:after{
+                    background: url(../../src/img/services/server-services.png);
+                    content: "";
+                    height: 23px;
+                }
+            }
+            .owl-dot:nth-child(5){
+                &:after{
+                    background: url(../../src/img/services/server1-services.png);
+                    content: "";
+                    height: 23px;
+                }
+            }
+
+             .owl-dot:nth-child(6){
+                &:after{
+                    background: url(../../src/img/services/server2-services.png);
+                    content: "";
+                    height: 23px;
+                }
+            }
+
+             .owl-dot:nth-child(7){
+                &:after{
+                    background: url(../../src/img/services/setting-services.png);
+                    content: "";
+                    height: 27px;
+                }
+            }
+
+             .owl-dot:nth-child(8){
+                &:after{
+                    background: url(../../src/img/services/map-services.png);
+                    content: "";
+                    height: 30px;
+                }
+            }
+
+              .owl-dot:nth-child(9){
+                &:after{
+                    background: url(../../src/img/services/carrier-services.png);
+                    content: "";
+                    height: 30px;
+                }
+            }
+        }
+
+        .owl-nav{
+            display: none;
+        }
+
+        .know-more{
+            display: inline-block;
+            width: 305px;
+            P{
+                font-size: 16px;
+                font-family: 'myriadPro-bold';
+                color: #6b6969;
+            }
+            a{
+                background-color: #f6bc0d;
+                color: #ffffff;
+                font-size: 20px;
+                padding: 10px 20px;
+                display: inline-block;
+                border-radius: 50px;
+                width: 200px;
+                font-family: 'myriadPro-bold';
+            }
+        }
+
+    }
+}

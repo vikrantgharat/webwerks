@@ -1,0 +1,93 @@
+//Footer Open
+footer{position:relative;width:100%;background-color:#06619c;color:#e4e4e4;}
+footer{
+    ul{padding-left: 0;}
+    a{color:#e4e4e4;text-decoration:none;}
+    a:hover{text-decoration:underline;color:#fff;}
+    .padding-top{padding-top: 105px;}
+    .favourite{background-color: #f44336; border: 1px solid #f44336; width: 32px; height: 32px; border-radius: 32px;text-align: center;color: #fff;}
+    .favourite a{font-size: 17px;color: #fff;line-height: 2;}
+    .favourite:hover{background-color: #fff; border: 1px solid #f44336;}
+    .favourite:hover a{color: #f44336;}
+    .fa-phone{border: 1px solid #555;width: 15px;height: 15px;border-radius:15px;text-align: center;color: #555;line-height: 1.2;font-size: 10px;margin-right: 5px;}
+    .border-right{border-right: 1px #e5e5e5 solid;margin: 22px 0px;}
+    .border-right-lightBlue{border-right: 1px solid #1f71a5;}
+    .border-left-lightBlue{border-left: 1px solid #1f71a5;}
+     h3{color:#fff;    margin-top: 10px;}
+     #mapIcon{
+         .mapContent p{color: #555;margin-bottom:0;}    
+         .mapContent p:first-child{margin-bottom:5px;}
+        }
+    .aboutww {padding:25px 0;}
+    .aboutww{
+        .about{
+            p{line-height:1.5;margin-top: 14px;font-size: 15px;}
+        }
+        .products{    
+            ul{margin-left: auto;}
+            li{line-height:2;width: 100%;padding-left: 0;}
+            li a{font-size: 15px;}
+            }
+        .follow{
+            .socialIcons{margin-top:16px;margin-left: 0;}
+            .socialIcons{ 
+                li{width:40px;height:40px;border-radius:20px;background-color:#fff;margin-right:10px;text-align: center;vertical-align: middle;cursor:pointer;transition:  color 0.5s ease;} 
+                li:last-child{margin-right:0px;transition:  color 0.5s ease;} 
+                li:first-child:hover a{color:#3953a0;transition:  color 0.5s ease;}
+                li:nth-child(2):hover a{color:#2dbffa;transition:  color 0.5s ease;}
+                li:nth-child(3):hover a{color:#d62f36;transition:  color 0.5s ease;}
+                li:nth-child(4):hover a{color:#d41817;transition:  color 0.5s ease;}
+                li:nth-child(5):hover a{color:#0169a6;transition:  color 0.5s ease;}
+                li:last-child:hover a{color:#ef8732;transition:  color 0.5s ease;}                
+                a{color:#9396ae;font-size:20px;line-height:2;}
+                }
+            .links{margin-top:20px;}    
+            .links{ 
+                li{border-right:solid 1px #fff;} 
+                li:last-child{border-right:none;}           
+                a{ font-size:15px; }
+                }    
+              }
+            }
+     .paymentSecurity{padding: 0 0 20px;}
+     .paymentSecurity{
+           li:last-child{margin-right: 0;}    
+           .payment h3{margin-right:20px;}
+           .payment ul{margin-top: 10px;}
+        }
+    .contactDetails{background-color: #fff;position: absolute;max-width: 1170px;left: 0;right: 0;margin: auto;top: 270px;                             color:#555555;
+                    -webkit-box-shadow:0px 1px 7px 1px rgba(0, 0, 0, 0.3);
+                    -moz-box-shadow:0px 1px 7px 1px rgba(0, 0, 0, 0.3);
+                    box-shadow:0px 1px 7px 1px rgba(0, 0, 0, 0.3);}
+    .contactDetails{
+        h3{text-transform: uppercase;color: #555555;font-weight: bold;font-size: 22px;}
+        p{font-size: 15px;}
+        .twitterFeed{margin:17px 0;}
+        .contactInfo{margin:0 0 17px;}
+        .contactInfo img{padding: 5px 0;}
+        .contactInfo .img{width: 13%;}
+        .twitterFeed img{padding: 10px 0;}
+        .twitterFeed .img{width: 14%;}
+        .img{width: 14%;}
+        .content{width: 86%;}
+        .twitterFeed .fa-twitter{color: #9396ae}
+        .promo{position: relative;}
+        .promo{
+            img{float: left;}
+            ul{position: absolute;right:20%;bottom: 0;margin: 0;}
+            ul li{margin:10px 0;}
+            .share{padding:0 0 22px;}
+            .share a:hover img{opacity: 0.8;}
+            .time{font-size: 14px;}
+            }
+        }
+
+    .bottomFooter{height: 30px;background-color: #052a51;color: #fff;text-align: center; width: 100%;}
+    .bottomFooter{
+        p{margin: 0;line-height: 2.5;font-size: 12px;opacity: 0.6;}
+    }
+  #mapIcon {
+    height:380px;
+  }
+}
+//Footer Close

@@ -1,0 +1,21 @@
+{
+  "name": "webwerks_new",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "nitesh.palankar <nitesh.palankar@neosofttech.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "owl.carousel": "^2.2.1"
+  }
+}

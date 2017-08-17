@@ -1,0 +1,147 @@
+/*cursor animation*/
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+.typed-fade-out{
+    opacity: 0;
+    animation: 0;
+    transition: opacity .25s;
+}
+.globeInnerWrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 0;
+    transform: translate(-50%, -60%);
+}
+.globeWrap{
+    max-width: 1286px;
+}
+.globe{
+    -webkit-animation: globeAnim 3s; /* Safari 4.0 - 8.0 */
+    animation: globeAnim 3s;
+    width: 280px;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes globeAnim {
+    0%   {transform: scale(8); opacity: 0.2;}
+    90%  {transform: scale(0.98); opacity: 1;}
+    92%  {transform: scale(0); opacity: 0;}
+}
+
+/* Standard syntax */
+@keyframes globeAnim {
+    0%   {transform: scale(8); opacity: 0.2;}
+    90%  {transform: scale(0.98); opacity: 1;}
+    92%  {transform: scale(0); opacity: 0;}
+}
+
+@-webkit-keyframes spin { 
+    100% { 
+        transform: rotate(180deg);
+    } 
+}
+
+
+.circle{
+    border: 1px solid #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    opacity: 0;
+}
+.circle1{
+    -webkit-animation: circleAnim 20s infinite 2s; /* Safari 4.0 - 8.0 */
+    animation: circleAnim 20s infinite 2s;
+}
+.circle2{
+    -webkit-animation: circleAnim 20s infinite 5s; /* Safari 4.0 - 8.0 */
+    animation: circleAnim 20s infinite 5s;
+}
+.circle3{
+    -webkit-animation: circleAnim 20s infinite 6s; /* Safari 4.0 - 8.0 */
+    animation: circleAnim 20s infinite 6s;
+}
+.circle4{
+    -webkit-animation: circleAnim 25s infinite 9s; /* Safari 4.0 - 8.0 */
+    animation: circleAnim 25s infinite 9s;
+}
+.circle5{
+    -webkit-animation: circleAnim 20s infinite 11s; /* Safari 4.0 - 8.0 */
+    animation: circleAnim 20s infinite 11s;
+}
+.circle6{
+    -webkit-animation: circleAnim 20s infinite 12s; /* Safari 4.0 - 8.0 */
+    animation: circleAnim 20s infinite 12s;
+}
+.circle7{
+    -webkit-animation: circleAnim 22s infinite 15s; /* Safari 4.0 - 8.0 */
+    animation: circleAnim 22s infinite 15s;
+}
+.circle8{
+    -webkit-animation: circleAnim 20s infinite 16s; /* Safari 4.0 - 8.0 */
+    animation: circleAnim 20s infinite 16s;
+}
+
+@-webkit-keyframes circleAnim {
+    /* to  {width:1500px; height:1500px; opacity: 0.3;} */
+
+    0%{width:0; height:0; opacity: 0;}
+    60%{width:1500px; height:1500px; opacity: 0.2;}
+     80%{width:1500px; height:1500px; opacity: 0;}
+    100%{width:0; height:0; opacity: 0;}
+}
+
+/* Standard syntax */
+@keyframes circleAnim {
+    /* to  {width:1500px; height:1500px; opacity: 0.3;} */
+
+    0%{width:0; height:0; opacity: 0;}
+    60%{width:1500px; height:1500px; opacity: 0.2;}
+     80%{width:1500px; height:1500px; opacity: 0;}
+    100%{width:0; height:0; opacity: 0;}
+}
+.globeBg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -50;
+    opacity: 0;
+    max-width: 280px;
+    transform: translate(-53%, -48%);
+    animation: el-visibility 1s ease 3s forwards;
+}
+
+.social-icon-wrap{
+    background-color: #fff;
+}
+@-webkit-keyframes el-visibility{
+    to {opacity: 0.2;}
+}
+@keyframes el-visibility{
+    to {opacity: 0.2;}
+}

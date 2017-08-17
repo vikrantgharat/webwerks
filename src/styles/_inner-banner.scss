@@ -1,0 +1,51 @@
+/**********banner***************/
+
+.innerBanner {
+    position: relative;
+    overflow: hidden;
+    background: url('../../src/img/about/bannerBg1.png');
+    min-height: 685px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &:after {
+        content: '';
+        width: 100%;
+        position: absolute;
+        bottom: -50px;
+        height: 100px;
+        background: #fff;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        left: 50%;
+        -webkit-box-shadow: 5px 15px 100px #000;
+        box-shadow: 5px 15px 100px #000;
+        border-radius: 50%;
+    }
+}
+
+.innerBanner {
+    img {
+        display: block;
+        width: 100%;
+    }
+    .text {
+        width: auto;
+        position: absolute;
+        top: 40%;
+        left: 20%;
+        color: $color-white;
+        font-size: 40px;
+        font-family: 'myriadPro-bold';
+    }
+    .text span {
+        font-weight: bold;
+        padding: 10px;
+        background-color: #339ede;
+        padding: 7px 13px 2px;
+        line-height: normal;
+        display: inline-block;
+    }
+}
+
+
+/**********banner***************/
