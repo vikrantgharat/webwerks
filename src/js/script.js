@@ -20,14 +20,17 @@ $(function(){
     /*Menu-toggle*/
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
-        $("#wrapper").removeClass("active");
+        $("#wrapper").toggleClass("active");
         e.stopPropagation()
     });
     
     $(document).on("click", function(e) {
-        if ($(e.target).is("#wrapper") === false) {
-            $("#wrapper").addClass("active");
-        }
+        // if($(e.target).is("#sidebar-wrapper") === true){
+        //     $("#wrapper").removeClass("active");
+        // }
+        // else {
+        //     $("#wrapper").addClass("active");
+        // }
     });
 
     // Typed

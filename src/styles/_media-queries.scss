@@ -1,0 +1,209 @@
+@media all and (max-width: 767px){
+    .serverBgCircles {
+        & > [class*='point']{
+            position:static;
+            transform: none;
+            width:50%;
+            text-align:left;
+            float: left;
+            margin-bottom: 15px;
+            svg{
+                display: none;
+            }
+        }
+    }
+    .point2 .point2-contentWrap,.point3 .point3-contentWrap,.point4 .point4-contentWrap,.point5 .point5-contentWrap,.point6 .point6-contentWrap,.point7 .point7-contentWrap,.point8 .point8-contentWrap,.point9 .point9-contentWrap{
+        position:static!important;
+    }
+    .serverWraper {
+        min-height: inherit;
+        padding:15px;
+        .serverBgCircles {
+            position:static;
+            width: auto;
+            height: auto;
+            transform: none;
+            -webkit-transform: none;
+            -moz-transform: none;
+            .pulse{
+                display: none;
+            }
+            .dot {
+                display: none;
+            }
+        }
+        > img{
+            display: none;
+        }
+        .point1 span {
+            display: inline-block;
+            float: right;
+            width: calc(100% - 70px);
+            text-align: left;
+            margin-right: 0;
+            margin-left: 8px;
+        }
+        .point6 .point6-contentWrap > span,.point7 .point7-contentWrap > span,.point8 .point8-contentWrap > span,.point9 .point9-contentWrap > span{
+            float: right;
+            width: calc(100% - 70px);
+            text-align: left;
+            margin-right: 0;
+            margin-left: 8px;
+        }
+        .point8 .point8-contentWrap{
+            position:static;
+        }
+        .serverBgCircles:before,.serverBgCircles:after{
+            content:"";
+            display: table;
+        }
+        .serverBgCircles:after{
+            clear: both;
+        }
+    }
+    #navbar{
+        display: block!important;
+        border-color: transparent;
+        .navbar-right{
+            position: fixed;
+            top: 0;
+            right: 15px;
+            margin: 0;
+            width: auto;
+             > li{
+                display:block;
+                float:left;
+             }
+        }
+    }
+    .social-icon-wrap{
+        position:static;
+    }
+    header {
+        #menu-toggle{
+            margin-left: 15px;
+        }
+    }
+    .sidebar-nav {
+        li{
+            float: none;
+            clear: both;
+        }
+        .dropdown-menu{
+            position: static;
+            width: 100%;
+            margin: 0;
+            padding: 10px 0;
+            border: 0;
+            box-shadow: none;
+            li{
+                border-bottom: 0;
+            }
+
+        }
+        .dropdown-backdrop{
+            display: none;
+        }
+    }
+    .exploreBtn{
+        margin-left: -20px;
+    }
+
+    .custom-dropdown{
+        background: #ffffff;
+        .custom-dropdown-menu{
+            min-width: 100%;
+            background-color: #ffffff;
+            height: 0px;
+            padding: 0;
+            position:static;
+            li{
+                border-bottom:0;
+            }
+            a{
+                padding: 5px 0;
+                text-transform: capitalize;
+                &:hover{
+                    color: inherit;
+                }
+            }
+            .sub-dropdown{
+                 background: #ffffff;
+                .sub-dropdown-menu{
+                    min-width: 100%;
+                    background-color: #ffffff;
+                    height: 0px;
+                    padding: 0;
+                    position:static;
+                    margin-left: 0;
+                }
+                &:hover{
+                    .sub-dropdown-menu{
+                        animation-name: none;
+                        height: auto;
+                        padding:0px 15px 0 30px;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+        &:hover{
+            .custom-dropdown-menu{
+                animation-name: none;
+                height: auto;
+                padding:0px 15px 0 40px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+    .sidebar-nav li a{
+        display: inline-block!important;
+        position: static;
+    }
+
+}
+
+@media (max-width: 480px){
+    .serverBgCircles {
+        > [class*='point']{
+            width: 100%;
+            float: none;
+        }
+    }
+    .col-xss-12{
+        width:100%;
+    }
+    .col-xss-6{
+        width: 50%;
+    }
+    .serverSecWrap{
+        .getQuoteWrap{
+            button[type="submit"]{
+                font-size: 15px!important;
+                width: auto!important;
+                padding:0 15px;
+            }
+        } 
+    }
+    .statesContainer {
+        i{
+            &.statIcon{
+                &::before{
+                    position:static;
+                }
+            }
+        } 
+    }
+    .mainSearchWrap{
+        width: 90%;
+        input {
+            height: 40px;
+            padding: 10px 110px 10px 10px;
+        }
+        button {
+            height: 40px;
+            line-height: 29px;
+            width: 100px;
+        }
+    }
+}

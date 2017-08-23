@@ -28,23 +28,52 @@
     <div id="wrapper" class="active">
       <div id="sidebar-wrapper">
         <nav id="spy">
+          <ul class="nav sidebar-nav hidden-md hidden-sm hidden-lg">
+            <li><a href="#">Our Products</a></li>
+            <li><a href="#about">Our Services</a></li>
+            <li class="custom-dropdown">
+               <a href="#" >Datacenters <span class="caret"></span></a>
+                <ul class="custom-dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                  <li class="sub-dropdown">
+                    <a href="#">Another dropdown <span class="caret"></span></a>
+                    <ul class="sub-dropdown-menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">One more separated link</a></li>
+                    </ul>
+                  </li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+            </li>
+            <li><a href="#contact">Company</a></li>
+          </ul>
           <ul class="sidebar-nav nav">
               <li>
-                  <a href="javascript:void(0)"><i class="fa fa-home"></i>Home</a>
+                  <a href="javascript:void(0)"><!-- <i class="fa fa-home"></i> -->Home</a>
               </li>
               <li>
                   <a href="javascript:void(0)" data-scroll>
-                      <i class="fa fa-comments"></i>Our Blog
+                      <!-- <i class="fa fa-comments"></i> -->Our Blog
                   </a>
               </li>
               <li>
                   <a href="javascript:void(0)" data-scroll>
-                      <i class="fa fa-briefcase"></i>Careers
+                     <!--  <i class="fa fa-briefcase"></i> -->Careers
                   </a>
               </li>
               <li>
                   <a href="javascript:void(0)" data-scroll>
-                      <i class="fa fa-envelope"></i>Contact us
+                      <!-- <i class="fa fa-envelope"></i> -->Contact us
                   </a>
               </li>
           </ul>
@@ -57,12 +86,12 @@
       <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
-            </button>
+            </button> -->
              <a id="menu-toggle" href="#" class="btn-menu toggle pull-left">
                     <i class="fa fa-bars" aria-hidden="true"></i>
                 </a>
@@ -70,35 +99,34 @@
               <img src="../src/img/logo.svg " alt="">
             </a>
           </div>
-          <div id="navbar" class="navbar-collapse collapse dropdown dropdown-inline" aria-expanded="false" style="height: 1px;">
-            <ul class="nav navbar-nav">
+          <div id="navbar" class="navbar-collapse collapse dropdown dropdown-inline " aria-expanded="false" style="height: 1px;">
+            <ul class="nav navbar-nav hidden-xs">
               <li><a href="#">Our Products</a></li>
               <li><a href="#about">Our Services</a></li>
-              <li class="dropdown">
-                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button">Datacenters <span class="caret"></span></a>
-<!--                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Datacenters<span class="caret"></span></a>-->
-                  <ul class="dropdown-menu dropdownhover-right">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                    <li class="dropdown">
-                      <a href="#">Another dropdown <span class="caret"></span></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">One more separated link</a></li>
-                      </ul>
-                    </li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
-              </li>
+              <li class="custom-dropdown">
+               <a href="#" >Datacenters <span class="caret"></span></a>
+                <ul class="custom-dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                  <li class="sub-dropdown">
+                    <a href="#">Another dropdown <span class="caret"></span></a>
+                    <ul class="sub-dropdown-menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">One more separated link</a></li>
+                    </ul>
+                  </li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+            </li>
               <li><a href="#contact">Company</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -153,22 +181,22 @@
             <div class="container">
                <div class="row">
                  <div class="statesContainer clearfix">
-                      <div class="col-xs-6 col-sm-3">
+                      <div class="col-xs-3 col-xss-6 col-sm-3">
                          <i class="statIcon stat1"></i>
                          <small>Happy Customers</small>
                          <h4>50k</h4>
                       </div>
-                      <div class="col-xs-6 col-sm-3">
+                      <div class="col-xs-3 col-xss-6 col-sm-3">
                          <i class="statIcon stat2"></i>
                          <small>Awards & Certificates</small>
                          <h4>15+</h4>
                       </div>
-                      <div class="col-xs-6 col-sm-3">
+                      <div class="col-xs-3 col-xss-6 col-sm-3">
                          <i class="statIcon stat3"></i>
                          <small>Valued Partners</small>
                          <h4>99+</h4>
                       </div>
-                      <div class="col-xs-6 col-sm-3">
+                      <div class="col-xs-3 col-xss-6 col-sm-3">
                          <i class="statIcon stat4"></i>
                          <small>Years of Experience</small>
                          <h4>20+</h4>
@@ -610,112 +638,115 @@
          </div>
       </div>
    </section>
-   <footer> 
-     <div id="mapIcon"></div>
-     <div class="container padding-top">
-      <div class="row aboutww">
-          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 about">
-            <h3>About Web Werks</h3>
-            <p>Web Werks is one of the leading TIER III & TIER IV Data Center service providers in India and in the United States in business since 1996 with five State-of-the-art Data Centers and remarkable 24x7 Rapid Action Support and 99.995% Uptime Guarantee.</p>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-7 col-xs-12 products border-right-lightBlue border-left-lightBlue">
-            <h3>Products & Services</h3>
-                  <div class="row">
-            <ul class="col-md-7 col-sm-7 col-xs-6 list-unstyled list-inline">
-              <li><a href="#">Cloud Hosting </a></li>
-              <li><a href="#">VPS Hosting</a></li>
-              <li><a href="#">Dedicated Servers</a></li>
-              <li><a href="#">Colocation Services</a></li>
-              <li><a href="#">About WW Data Centers</a></li>      
-            </ul>
-            <ul class="col-md-5 col-sm-5 col-xs-6 list-unstyled list-inline">
-              <li><a href="#">Migration Services</a></li>
-              <li><a href="#">Disaster Solutions</a></li>
-              <li><a href="#">Security Services</a></li>
-              <li><a href="#">Storage Solutions </a></li>   
-            </ul>
-                  </div>    
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12 follow">
-            <h3>Follow Us On</h3>
-            <ul class="list-unstyled list-inline socialIcons">
-              <li><a href="#" title="facebook"><span class="fa fa-facebook"></span></a></li>
-              <li><a href="#" title="twitter"><span class="fa fa-twitter"></span></a></li>
-              <li><a href="#" title="gPlus"><span class="fa fa-google-plus"></span></a></li>
-              <li><a href="#" title="youTube"><span class="fa fa-youtube-play"></span></a></li>
-              <li><a href="#" title="linkedIn"><span class="fa fa-linkedin"></span></a></li>
-              <li><a href="#" title="feeds"><span class="fa fa-rss"></span></a></li>
-            </ul>
-            <ul class="list-unstyled list-inline links">
-              <li><a href="#" title="MSA">MSA</a></li>
-              <li><a href="#" title="SLA">SLA</a></li>
-              <li><a href="#" title="AUP">AUP</a></li>
-              <li><a href="#" title="Privacy Policy">Privacy Policy</a></li>
-              <li><a href="#" title="Sitemap">Sitemap</a></li>
-            </ul>
-          </div>
-      </div>
-      <div class="row paymentSecurity">
-        <div class="col-lg-8 col-md-7 col-sm-6 col-xs-12 payment">
-          <h3 class="pull-left">Payments We Accept</h3>
-              <ul class="list-unstyled list-inline pull-left">
-                  <li><img src="../src/img/masterCard.png" alt="mastercard" title="mastercard"></li>
-                  <li><img src="../src/img/visa.png" alt="visa" title="visa"></li>
-                  <li><img src="../src/img/wireTransfer.png" alt="wireTransfer" title="wireTransfer"></li>
-                  <li><img src="../src/img/discover.png" alt="discover" title="discover"></li>
-              </ul>
+    <footer>
+        <div id="mapIcon"></div>
+        <div class="container contactDetails">
+            <div class="row">
+                <div class="col-lg-4 col-sm-4 border-right">
+                    <div class="contactInfo clearfix">
+                        <div class="img pull-left"><img src="../src/img/contact_info.png"></div>
+                        <div class="content pull-left">
+                            <h3>CONTACT INFORMATION</h3>
+                            <p>9th Floor, Sigma IT park,
+                                <br> Sector 8, Rabale, Navi Mumbai,
+                                <br> Thane 400701, <span class="text-uppercase">India</span></p>
+                            <p><i class="fa fa-phone"></i>+91 8828 335 555</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-4">
+                    <div class="twitterFeed clearfix">
+                        <div class="img pull-left"><img src="../src/img/twitter.png"></div>
+                        <div class="content pull-left">
+                            <h3>TWITTER FEED</h3>
+                            <p class="clearfix"><strong>WebWerks Datacenters <br>@webwerksDC <br> </strong>
+                                <i class="fa fa-twitter"></i> </p>
+                            <p>Web Werks-TIER IV data center is offering #discount on co-location services. To avail call on +91 8828335555 or email at sales@webwerks.in
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-4 promo clearfix">
+                    <img src="../src/img/promoCode.png" alt="promo" title="promo" class="pull-left">
+                    <ul class="pull-left list-unstyled">
+                        <li class="favourite"><a href="#"><i class="fa fa-heart-o"></i></a></li>
+                        <li class="share"><a href="#"><img src="../src/img/share.png" alt="share" title="share"></a></li>
+                        <li><span class="time">3Hr</span></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12 security">
-           <ul class="list-unstyled list-inline">
-                  <li><img src="../src/img/security1.png" alt="security" title="security"></li>
-                  <li><img src="../src/img/security2.png" alt="security" title="security"></li>
-                  <li><img src="../src/img/security3.png" alt="security" title="security"></li>
-              </ul>
+        <div class="container padding-top">
+            <div class="row aboutww">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 about">
+                    <h3>About Web Werks</h3>
+                    <p>Web Werks is one of the leading TIER III & TIER
+                        <br> IV Data Center service providers in India and in
+                        <br> the United States in business since 1996 with
+                        <br> five State-of-the-art Data Centers and
+                        <br> remarkable 24x7 Rapid Action Support and
+                        <br> 99.995% Uptime Guarantee.</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-7 col-xs-12 products border-right-lightBlue border-left-lightBlue">
+                    <h3>Products & Services</h3>
+                    <div class="row">
+                        <ul class="col-md-7 col-sm-7 col-xs-6 list-unstyled list-inline">
+                            <li><a href="#">Cloud Hosting </a></li>
+                            <li><a href="#">VPS Hosting</a></li>
+                            <li><a href="#">Dedicated Servers</a></li>
+                            <li><a href="#">Colocation Services</a></li>
+                            <li><a href="#">About WW Data Centers</a></li>
+                        </ul>
+                        <ul class="col-md-5 col-sm-5 col-xs-6 list-unstyled list-inline">
+                            <li><a href="#">Migration Services</a></li>
+                            <li><a href="#">Disaster Solutions</a></li>
+                            <li><a href="#">Security Services</a></li>
+                            <li><a href="#">Storage Solutions </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12 follow">
+                    <h3>Follow Us On</h3>
+                    <ul class="list-unstyled list-inline socialIcons">
+                        <li><a href="#" title="facebook"><span class="fa fa-facebook"></span></a></li>
+                        <li><a href="#" title="twitter"><span class="fa fa-twitter"></span></a></li>
+                        <li><a href="#" title="gPlus"><span class="fa fa-google-plus"></span></a></li>
+                        <li><a href="#" title="youTube"><span class="fa fa-youtube-play"></span></a></li>
+                        <li><a href="#" title="linkedIn"><span class="fa fa-linkedin"></span></a></li>
+                        <li><a href="#" title="feeds"><span class="fa fa-rss"></span></a></li>
+                    </ul>
+                    <ul class="list-unstyled list-inline links">
+                        <li><a href="#" title="MSA">MSA</a></li>
+                        <li><a href="#" title="SLA">SLA</a></li>
+                        <li><a href="#" title="AUP">AUP</a></li>
+                        <li><a href="#" title="Privacy Policy">Privacy Policy</a></li>
+                        <li><a href="#" title="Sitemap">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row paymentSecurity">
+                <div class="col-lg-8 col-md-7 col-sm-6 col-xs-12 payment">
+                    <h3 class="pull-left">Payments We Accept</h3>
+                    <ul class="list-unstyled list-inline pull-left">
+                        <li><img src="../src/img/masterCard.png" alt="mastercard" title="mastercard"></li>
+                        <li><img src="../src/img/visa.png" alt="visa" title="visa"></li>
+                        <li><img src="../src/img/wireTransfer.png" alt="wireTransfer" title="wireTransfer"></li>
+                        <li><img src="../src/img/discover.png" alt="discover" title="discover"></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12 security">
+                    <ul class="list-unstyled list-inline">
+                        <li><img src="../src/img/security1.png" alt="security" title="security"></li>
+                        <li><img src="../src/img/security2.png" alt="security" title="security"></li>
+                        <li><img src="../src/img/security3.png" alt="security" title="security"></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>       
-    </div>   
-      <div class="container contactDetails">
-          <div class="row">
-              <div class="col-lg-4 col-sm-4 border-right">
-                <div class="contactInfo clearfix">
-                  <div class="img pull-left"><img src="../src/img/contact_info.png"></div>
-                  <div class="content pull-left">
-                      <h3>CONTACT INFORMATION</h3>
-                      <p>9th Floor, Sigma IT park,<br>
-                         Sector 8, Rabale, Navi Mumbai,<br>
-                         Thane 400701, <span class="text-uppercase">India</span></p>
-                       <p><i class="fa fa-phone"></i>+91 8828 335 555</p>
-                  </div>
-                 </div>          
-              </div>
-              <div class="col-lg-4 col-sm-4">
-                <div class="twitterFeed clearfix">
-                  <div class="img pull-left"><img src="../src/img/twitter.png"></div>
-                  <div class="content pull-left">
-                      <h3>TWITTER FEED</h3>
-                      <p><strong>WebWerks Datacenters <i class="fa fa-twitter"></i> <br>
-                          @webwerksDC</strong> <br>
-                          Web Werks-TIER IV data center is offering <br>
-                          #discount on co-location services. To avail <br>
-                          call on +91 8828335555 or email at <br>
-                          sales@webwerks.in</p>
-                  </div>
-                </div>          
-              </div>
-              <div class="col-lg-4 col-sm-4 promo clearfix">
-                  <img src="../src/img/promoCode.png" alt="promo" title="promo" class="pull-left">
-                  <ul class="pull-left list-unstyled">
-                      <li class="favourite"><a href="#"><i class="fa fa-heart-o"></i></a></li>
-                      <li class="share"><a href="#"><img src="../src/img/share.png" alt="share" title="share"></a></li>
-                      <li><span class="time">3Hr</span></li>
-                  </ul>
-              </div>
-         </div>
-      </div>
-      <div class="bottomFooter">
-        <p>&copy; Copyright - 1996 - 2017</p>
-      </div>
-  </footer>
+        <div class="bottomFooter">
+            <p>&copy; Copyright - 1996 - 2017</p>
+        </div>
+    </footer>
     
     <div class="mainSearchWrap">
         <form action="">
@@ -779,7 +810,10 @@
                         items:2
                     },
                     1000:{
-                        items:4
+                        items:3
+                    },
+                    1200:{
+                      items:4
                     }
                 }
             });

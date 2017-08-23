@@ -2,7 +2,7 @@
     width: 100%;
     background-image: url('../../src/img/bg.jpg');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: center top;
     min-height: 630px;
     position: relative;
@@ -36,7 +36,9 @@
     color: #ffd800;
     font-weight: bold;
 }
-
+.globe{
+    max-width: 280px;
+}
 
 /*states*/
 .statesWrap{
@@ -244,7 +246,7 @@
         }
         .getQuoteWrap{
             position: absolute;
-            bottom: -50px;
+            bottom: -23px;
             left: 50%;
             width: 750px;
             transform: translateX(-50%);
@@ -253,9 +255,13 @@
             border-radius: 30px;
             background-color: $color-white;
             @media all and (max-width: 767px){
-                bottom: 0;
                 width: 100%;
+                position: relative;
                 padding-right: 140px;
+                left: 0;
+                transform: none;
+                -webkit-transform: none;
+                -moz-transform: none;
             }
             input{
                 width: 100%;
@@ -693,6 +699,97 @@ $colors: $colour1, $colour2, $colour3;
             margin-right: 10px;
             font-size: 3.2em;
             vertical-align: text-bottom;
+        }
+    }
+}
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+
+.custom-dropdown:hover{
+    .custom-dropdown-menu{
+        animation-name: fadeInUp;
+        top: 100%;
+        left: 0px;
+        animation-duration: 0.4s;
+        opacity: 1;
+        visibility:visible;
+    }
+}
+
+.custom-dropdown-menu{
+    position:absolute;
+    top:100%;
+    background-color: rgba(5, 45, 117, 0.95);
+    list-style: none;
+    min-width:150%;
+    left: 0;
+    -webkit-animation-name: zoomOut;
+    animation-name: zoomOut;
+    animation-duration: 0.4s;
+    opacity: 0;
+    visibility: hidden;
+    padding:10px 0;
+
+    a{
+        padding: 5px 20px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.5);
+        text-decoration: none;
+        display: block;
+        &:hover{
+            color: #ffffff;
+            text-decoration: none;
+        }
+    }
+    .sub-dropdown{
+        position:relative;
+        .sub-dropdown-menu{
+            padding:10px 0;
+            position:absolute;
+            left: 100%;
+            top: 0;
+            list-style: none;
+            min-width:100%;
+            background-color:rgba(5, 45, 117, 0.95);
+            -webkit-animation-name: zoomOut;
+            animation-name: zoomOut;
+            animation-duration: 0.4s;
+            opacity: 0;
+        }
+        &:hover{
+            .sub-dropdown-menu{
+                animation-name: fadeInUp;
+                top: 0%;
+                left: 100%;
+                animation-duration: 0.4s;
+                opacity: 1;
+            }
         }
     }
 }
