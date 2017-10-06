@@ -1,1 +1,73 @@
 $white:#fff;
+
+// media queries
+$xss-width:481px;
+$xs-width: 768px;
+$sm-width: 981px;
+$md-width: 1025px;
+$lg-width: 1920px;
+
+
+//(max-width:480px)
+@mixin xssScreen {
+  @media (max-width: #{$xss-width - 1px}) {
+    @content;
+  }
+}
+
+//(min-width:481px) and (max-width:767px)
+@mixin xslandScreen {
+  @media (min-width: #{$xss-width}) and (max-width: #{$xs-width - 1px}) {
+    @content;
+  }
+}
+
+//(max-width:767px)
+@mixin xsScreen {
+  @media (max-width: #{$xs-width - 1px}) {
+    @content;
+  }
+}
+
+//(min-width:481px) and (max-width:980px)
+@mixin xsmScreen {
+  @media (min-width: #{$xss-width}) and (max-width: #{$sm-width - 1px}) {
+    @content;
+  }
+}
+
+//(min-width:768px) and (max-width:980px)
+@mixin smScreen {
+  @media (min-width: #{$xs-width}) and (max-width: #{$sm-width - 1px}) {
+    @content;
+  }
+}
+
+//(max-width:980px)
+@mixin smmScreen {
+  @media (max-width: #{$sm-width - 1px}) {
+    @content;
+  }
+}
+
+
+//(min-width:981px) and (max-width:1024px)
+@mixin mdScreen {
+  @media (min-width: #{$sm-width}) and (max-width: #{$md-width - 1px}) {
+    @content;
+  }
+}
+
+//(min-width:1025px) and (max-width:1919px)
+@mixin lgScreen {
+  @media (min-width: #{$md-width}) and (max-width: #{$lg-width - 1px}) {
+    @content;
+  }
+}
+
+//(min-width:1920px)
+@mixin xlgScreen {
+  @media (min-width: #{$lg-width}) {
+    @content;
+  }
+}

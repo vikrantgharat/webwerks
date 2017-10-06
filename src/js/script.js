@@ -23,6 +23,22 @@ $(function(){
         $("#wrapper").toggleClass("active");
         e.stopPropagation()
     });
+
+     $('.close-icon').click(function(e) {
+        e.preventDefault();
+            $('#wrapper').addClass("active");
+        e.stopPropagation()
+
+    });
+
+    //  $('.close-sidebar').click(function(event) {
+    //     event.stopPropagation();
+    //     if ($("#wrapper").toggleClass("active")) {
+    //         $('#wrapper').addClass("active");
+    //     } else {
+    //         $('#wrapper').removeClass("active");
+    //     }
+    // });
     
     $(document).on("click", function(e) {
         // if($(e.target).is("#sidebar-wrapper") === true){

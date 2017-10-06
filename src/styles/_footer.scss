@@ -55,7 +55,7 @@ footer{
            .payment h3{margin-right:20px;}
            .payment ul{margin-top: 10px;}
         }
-    .contactDetails{background-color: #fff;position: absolute;max-width: 1170px;left: 0;right: 0;margin: auto;top: 270px;                             color:#555555;
+    .contactDetails{background-color: #fff;position: absolute;max-width: 1170px;left: 0;right: 0;margin: auto;top: 270px;color:#555555;
                     -webkit-box-shadow:0px 1px 7px 1px rgba(0, 0, 0, 0.3);
                     -moz-box-shadow:0px 1px 7px 1px rgba(0, 0, 0, 0.3);
                     box-shadow:0px 1px 7px 1px rgba(0, 0, 0, 0.3);}
@@ -272,6 +272,24 @@ footer .aboutww .follow .socialIcons a {
     line-height: 100%;
 }
 
+footer .aboutww .follow .links li{
+    position: relative;
+    border-right: none;
+    &:after {
+    content: "";
+    background: #e4e4e4;
+    width: 1px;
+    display: inline-block;
+    height: 14px;
+    position: absolute;
+    top: 5px;
+    bottom: 0;
+    right: -1px;
+    vertical-align: middle;
+   }
+   &:last-child:after{content: none;}
+}
+
 footer .bottomFooter {
     height: auto;
     background-color: #052a51;
@@ -290,7 +308,7 @@ footer .bottomFooter p {
     opacity: 1;
 }
 
-@media (min-width: 768px) and (max-width: 980px){
+@include smScreen{
     footer .contactDetails .promo ul{
         bottom: -14%;
         flex-direction: row;
@@ -309,7 +327,7 @@ footer .bottomFooter p {
     footer .border-left-lightBlue, footer .border-right-lightBlue{padding: 0 15px;}
 }
 
-@media (max-width: 767px){
+@include xsScreen{
   footer #mapIcon{
     height: 270px;
   }
@@ -352,12 +370,12 @@ footer .list-inline {
 }
 }
 
-@media (min-width: 481px) and (max-width: 767px){
+@include xslandScreen{
 footer .contactDetails p strong br{display: none;}
 }
 
 
-@media (max-width: 480px){
+@include xssScreen{
 
   footer .contactDetails .promo ul{right: 10%;}
   

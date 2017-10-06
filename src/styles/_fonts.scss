@@ -47,3 +47,13 @@
     font-weight: bold;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'gothamblack';
+    src: url('../../src/fonts/gothamblack.eot');
+    src: url('../../src/fonts/gothamblack.eot') format('embedded-opentype'),
+         url('../../src/fonts/gothamblack.woff2') format('woff2'),
+         url('../../src/fonts/gothamblack.woff') format('woff'),
+         url('../../src/fonts/gothamblack.ttf') format('truetype'),
+         url('../../src/fonts/gothamblack.svg#gothamblack') format('svg');
+}

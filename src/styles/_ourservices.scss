@@ -1,4 +1,33 @@
+.inner-pages.serverWraper {
+    min-height: auto;
+    padding-top: 0;
+}
+
 /*************our-services*****************/
+
+.service-banner{
+    &:before{
+        background:$white;
+    }
+   .banner-title{
+     left:32.8%;
+    h2{
+        span{width:290px;}
+    }
+   }
+
+  .service-banner-inner-image{
+    position: absolute;
+    right: 15.5%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    @include xsScreen{display: none;}
+    @media (min-width: 768px) and (max-width:900px){right: -18.5%;}
+    @media (min-width: 901px) and (max-width:1024px){right: -9.5%;}
+  }
+}
+
 section.our-services{
     background: url("../../src/img/about/timeline-bg.png");
     background-repeat: no-repeat;
@@ -24,6 +53,8 @@ section.our-services{
           img{
             width: auto;
             display: inline-block;
+            padding:100px 0 100px 100px;
+             @include xsScreen{display: none;}
           }
         }
         .animated  {
@@ -43,6 +74,8 @@ section.our-services{
             position: absolute;
             left: -100px;
             top: 0;
+             @include xsScreen{left:0px;}
+             @include smScreen{left:0px;}
             &:before {
                 content: '';
                 border: 1px solid #eee;
@@ -77,7 +110,7 @@ section.our-services{
                         position: absolute;
                         left: 50px;
                         top: -5px;
-                        font-size: 20px;
+                        font-size: 18px;
                         color: #555;
                         white-space: nowrap;
                     }
@@ -113,33 +146,40 @@ section.our-services{
             }
             .owl-dot:first-child{
                 &:after{
+                    background: url(../../src/img/services/location-services.png);
+                    content: "";
+                    height: 29px;
+                }
+            }
+            .owl-dot:nth-child(2){
+                &:after{
                     background: url(../../src/img/services/cloud-services.png);
                     content: "";
                     height: 23px;
                 }
             }
-            .owl-dot:nth-child(2){
+            .owl-dot:nth-child(3){
                 &:after{
                     background: url(../../src/img/services/email-services.png);
                     content: "";
                     height: 25px;
                 }
             }
-            .owl-dot:nth-child(3){
+            .owl-dot:nth-child(4){
                 &:after{
                     background: url(../../src/img/services/firewall-services.png);
                     content: "";
                     height: 25px;
                 }
             }
-            .owl-dot:nth-child(4){
+            .owl-dot:nth-child(5){
                 &:after{
                     background: url(../../src/img/services/server-services.png);
                     content: "";
-                    height: 23px;
+                    height: 33px;
                 }
             }
-            .owl-dot:nth-child(5){
+            .owl-dot:nth-child(6){
                 &:after{
                     background: url(../../src/img/services/server1-services.png);
                     content: "";
@@ -147,7 +187,7 @@ section.our-services{
                 }
             }
 
-             .owl-dot:nth-child(6){
+             .owl-dot:nth-child(7){
                 &:after{
                     background: url(../../src/img/services/server2-services.png);
                     content: "";
@@ -155,7 +195,7 @@ section.our-services{
                 }
             }
 
-             .owl-dot:nth-child(7){
+             .owl-dot:nth-child(8){
                 &:after{
                     background: url(../../src/img/services/setting-services.png);
                     content: "";
@@ -163,7 +203,7 @@ section.our-services{
                 }
             }
 
-             .owl-dot:nth-child(8){
+             .owl-dot:nth-child(9){
                 &:after{
                     background: url(../../src/img/services/map-services.png);
                     content: "";
@@ -171,7 +211,7 @@ section.our-services{
                 }
             }
 
-              .owl-dot:nth-child(9){
+              .owl-dot:nth-child(10){
                 &:after{
                     background: url(../../src/img/services/carrier-services.png);
                     content: "";
@@ -185,8 +225,12 @@ section.our-services{
         }
 
         .know-more{
-            display: inline-block;
-            width: 305px;
+            // display: inline-block;
+            // width: 305px;
+            position:relative;
+            top:228px;
+            @include xsScreen{top:0;}
+            @include smScreen{top:0;}
             P{
                 font-size: 16px;
                 font-family: 'myriadPro-bold';
@@ -201,8 +245,61 @@ section.our-services{
                 border-radius: 50px;
                 width: 200px;
                 font-family: 'myriadPro-bold';
+                text-align:center;
             }
         }
 
     }
+}
+
+section.our-services .serivces-content .owl-dots .owl-dot.active:after {
+    width: 41px;
+    height: 41px;
+    text-align: center;
+    line-height: 41px;
+    vertical-align: middle;
+    background-color: #fff;
+    background-position: center center;
+    border-radius: 100%;
+    background-size: 60%;
+}
+
+.ourservices-carousel{display:none !important;}
+
+.serivces-content.desktop{display:block !important;}
+
+@include xsScreen{
+    .serivces-content.desktop{display:none !important;}
+
+    .ourservices-carousel{display:block !important;}
+
+    section.our-services .serivces-content{
+        margin:40px 0;
+    }
+    .services-image-content{
+        text-align:center;
+    }
+
+    .services-image-content img {
+        width: auto !important;
+        display: inline-block !important;
+        margin-bottom: 10px;
+    }
+
+    .service-title h4 {
+        font-size: 22px;
+        font-family: 'myriadPro-bold';
+    }
+
+    section.our-services .serivces-content .know-more{
+        width:auto;
+        display:inline-block;
+        position:static;
+    }
+
+    section.our-services .serivces-content .know-more P{margin-bottom:20px;}
+
+   .ourservices-carousel .owl-nav {
+    display: none;
+   }
 }

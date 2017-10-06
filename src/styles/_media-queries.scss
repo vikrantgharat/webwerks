@@ -1,4 +1,4 @@
-@media all and (max-width: 767px){
+@include xsScreen{
     .serverBgCircles {
         & > [class*='point']{
             position:static;
@@ -157,13 +157,13 @@
         }
     }
     .sidebar-nav li a{
-        display: inline-block!important;
+        display: block!important;
         position: static;
     }
 
 }
 
-@media (max-width: 480px){
+@include xssScreen{
     .serverBgCircles {
         > [class*='point']{
             width: 100%;
@@ -202,7 +202,7 @@
         }
         button {
             height: 40px;
-            line-height: 29px;
+            line-height: 40px;
             width: 100px;
         }
     }
