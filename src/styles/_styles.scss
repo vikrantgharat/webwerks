@@ -16,13 +16,13 @@
 
 .about-banner-inner-image {
     position: absolute;
-    right: 22.5%;
+    right:20px;
     top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    @include xsScreen{display: none;}
-    @media (min-width: 768px) and (max-width:900px){right: -18.5%;}
-    @media (min-width: 901px) and (max-width:1024px){right: -5.5%;}
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    @include xsScreen {display: none;}
+    @media (min-width: 768px) and (max-width:900px){right: 0;}
+    @media (min-width: 901px) and (max-width:1024px){right: 0;}
 }
 
 
@@ -295,7 +295,7 @@ section.abtUs {
     .timeline {
         margin: 0 auto -50px;
         position: relative;
-        @media (max-width: 767px) {
+        @media (max-width: 1199px) {
             margin: 0 auto 0;
         }
     }
@@ -325,15 +325,16 @@ section.abtUs {
         }
         .event {
             max-width: 485px;
-            @media (max-width: 767px) {
-                max-width: 100%;
+            margin-bottom: 20px;
+            @media (max-width: 1199px) {
+                max-width: 100%;margin-bottom: 30px;
             }
         }
         .left-event {
             position: relative;
             top: -395px;
             float: left;
-            @media (max-width: 767px) {
+            @media (max-width: 1199px) {
                 top:0;
                 float: none;
                 left: 0;
@@ -342,7 +343,7 @@ section.abtUs {
         .right-event {
             position: relative;
             float: right;
-            @media (max-width: 767px) {
+            @media (max-width: 1199px) {
                 float: none;
             }
         }
@@ -354,15 +355,15 @@ section.abtUs {
             content: "";
             position: absolute;
             width: 1px;
-            height: 78%;
+            height: 95%;
             background-color: #e2e2e2;
             left: 50%;
-            top: 0;
+            top: -2%;
             bottom: 25%;
             margin-left: -2px;
-            -webkit-animation: height 5s linear;
-            animation: height 5s linear;
-            @media (max-width: 767px) {
+            -webkit-animation: height 10s linear;
+            animation: height 10s linear;
+            @media (max-width: 1199px) {
                 display: none;
             }
         }
@@ -376,8 +377,9 @@ section.abtUs {
             position: relative;
             z-index: 4;
             margin-top: 40px;
-            @media (max-width: 767px) {
+            @media (max-width: 1199px) {
                 min-width: 100%;
+                min-height: auto;
             }
             &:before{
                 content: "";
@@ -386,7 +388,9 @@ section.abtUs {
                 position: absolute;
                 right: -101px;
                 top: 0px;
-                @include xsScreen{display: none;}
+                @media (max-width: 1199px){display: none;}
+                @include mdScreen {display: none;}
+                @include xsScreen {display: none;}                
             }
         }
 
@@ -400,8 +404,9 @@ section.abtUs {
             position: relative;
             z-index: 4;
             margin-top: 30px;
-            @media (max-width: 767px) {
+            @media (max-width: 1199px) {
                 min-width: 100%;
+                min-height: auto;
             }
             &:before{
                 content: "";
@@ -410,13 +415,15 @@ section.abtUs {
                 position: absolute;
                 left: -99px;
                 top: 0px;
-                @include xsScreen{display: none;}
+                @media (max-width: 1199px){display: none;}
+                @include mdScreen {display: none;}
+                @include xsScreen {display: none;}
             }
         }
 
         .event.right-event:first-child {
             top: -100px;
-            @media (max-width: 767px) {
+            @media (max-width: 1199px) {
                 top:0;
             }
         }
@@ -431,7 +438,7 @@ section.abtUs {
             margin-top: 25px;
             color: #747474;
             font-size: 15px;
-            line-height: 25px;
+            line-height: 22px;
             font-family: 'myriadPro-regular';
         }
         .event-imgs {
@@ -443,7 +450,7 @@ section.abtUs {
             // -webkit-animation: fade 3s ease-in 1;
             // animation: fade 3s ease-in 1;
             img {
-                @media (max-width: 767px) {
+                @media (max-width: 1199px) {
                     max-width:100%;
                 }
             }
@@ -514,13 +521,13 @@ section.abtUs {
             background: -moz-radial-gradient(#ffc000 25%, #fbe08f 20%, #fef8e6 50%);
             /* For Firefox 3.6 to 15 */
             border-radius: 40px;
-            top: 7%;
-            left: 48.1%;
+            top: -7%;
+            left: -26.5%;
             z-index: 5;
             -webkit-animation: flash 2s ease-out infinite;
             animation: flash 2s ease-out infinite;
 
-            @media (max-width: 767px) {
+            @media (max-width: 1199px) {
                 display: none;
             }
         }
@@ -540,22 +547,22 @@ section.abtUs {
             background: -moz-radial-gradient(#06619c 25%, #4495c9 20%, #dcf0fd 50%);
             /* For Firefox 3.6 to 15 */
             border-radius: 40px;
-            top: 23.3%;
-            left: 48.1%;
+            top: -7%;
+            right: -26.5%;
             z-index: 5;
             -webkit-animation: flash 2s ease-out infinite;
             animation: flash 2s ease-out infinite;
 
-            @media (max-width: 767px) {
+            @media (max-width: 1199px) {
                 display: none;
             }
         }
 
         .last-event {
-            position: absolute;
+            // position: absolute;
             top: 35%;
             right: 9px;
-            @media (max-width: 767px) {
+            @media (max-width: 1199px) {
                 position: static;
             }
         }
@@ -566,8 +573,8 @@ section.abtUs {
         right: 0;
         left: 0;
         margin: 0 auto;
-        bottom: 9%;
-        @media (max-width: 767px) {
+        bottom:5%;
+        @media (max-width: 1199px) {
             position: static;
         }
     }
@@ -619,7 +626,7 @@ section.abtUs {
     // }
 }
 
-
+/**********about***************/
 
 /**********features***************/
 
@@ -683,7 +690,7 @@ section.abtServices {
         font-family: 'myriadPro-bold';
         color: #06619c;
         margin-bottom: 40px;
-         @include xssScreen{font-size: 28px;}
+         @include xssScreen {font-size: 28px;}
     }
 
 
@@ -691,8 +698,8 @@ section.abtServices {
         h4 {
             background-color: #06619c;
             height: 75px;
-            line-height: 75px;
-            font-size: 24px;
+            line-height: 95px;
+            font-size: 18px;
             color: #fff;
             text-align: center;
             -webkit-box-shadow: -2px 4px 5px 0px rgba(0, 0, 0, 0.3);
@@ -700,7 +707,8 @@ section.abtServices {
             box-shadow: -2px 4px 5px 0px rgba(0, 0, 0, 0.3);
             margin: 0;
             position: relative;
-             @include xsScreen{font-size: 13px;}
+            @include xsmScreen {height: 60px;line-height:75px;font-size: 16px;}
+            @include xsScreen {font-size: 14px;}
         }
     }
     .box-content {
@@ -721,11 +729,11 @@ section.abtServices {
         margin-bottom: 15px;
         padding-left: 75px;
         color: #151515;
-        font-size: 18px;
-         @include xsScreen{
+        font-size: 15px;
+         @include xsScreen {
             font-size: 12px;           
          }
-        @include xssScreen{
+        @include xssScreen {
             padding-left: 57px;
         }
     }
@@ -733,12 +741,14 @@ section.abtServices {
         margin-bottom: 0px;
     }
     .box-content li:nth-child(odd) {
-        background: url('../../src/img/about/yellow-tab.png') no-repeat left center;
-        @include xssScreen{background-size: 25%;}
+        background: url('../../src/img/about/yellow-tab.png') no-repeat left center;background-size: 5%;
+        @include xsmScreen {background-size: 10%;}
+        @include mdScreen {background-size: 12%;}
     }
     .box-content li:nth-child(even) {
-        background: url('../../src/img/about/blue-tab.png') no-repeat left center;
-        @include xssScreen{background-size: 25%;}
+        background: url('../../src/img/about/blue-tab.png') no-repeat left center;background-size: 5%;
+        @include xsmScreen {background-size: 10%;}
+        @include mdScreen {background-size: 12%;}
     }
     #scrollStyle::-webkit-scrollbar {
         width: 6px;
@@ -836,11 +846,8 @@ section.abtServices {
     opacity: 1;
 }
 
-.owl-item.active.center .box-heading h4 {
-    line-height: 95px;
-}
 
- @include xssScreen{
+ @include xssScreen {
     section.abtServices .box-heading{
         width: 87%;
         margin: auto;

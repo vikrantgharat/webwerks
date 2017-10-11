@@ -40,7 +40,7 @@ $lLengthNum: (88) (320) (285) (250) (280) (260) (125) (185) (220);
       }
       .point#{$i}-contentWrap{
           opacity: 0;
-          animation: dot 0.3s linear #{$i + 0.2}s forwards;
+          animation: dot 0.2s linear #{$i + 0.2}s forwards;
       }
   }
 }

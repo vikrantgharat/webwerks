@@ -10,21 +10,24 @@
         background:$white;
     }
    .banner-title{
-     left:32.8%;
+     left:10%;
     h2{
-        span{width:290px;}
-    }
+        span{width:280px;
+        @include xssScreen {width:180px;line-height: 1.6;}
+       }
+       @include xssScreen {font-size: 24px;}
+     }
    }
 
   .service-banner-inner-image{
     position: absolute;
-    right: 15.5%;
+    right:20px;
     top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    @include xsScreen{display: none;}
-    @media (min-width: 768px) and (max-width:900px){right: -18.5%;}
-    @media (min-width: 901px) and (max-width:1024px){right: -9.5%;}
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    @include xsScreen {display: none;}
+    @media (min-width: 768px) and (max-width:900px){right: 0;}
+    @media (min-width: 901px) and (max-width:1024px){right: 0;}
   }
 }
 
@@ -43,6 +46,11 @@ section.our-services{
         margin: 160px 0;
         .owl-item {
             display: table;
+            visibility: hidden;
+        }
+        .owl-item.active{visibility: visible;}
+        .owl-stage{
+            transform: translate3d(-12540px, 0px, 0px); transition: 0.605s!important; width: 22800px;
         }
 
         .owl-carousel .item {
@@ -54,7 +62,9 @@ section.our-services{
             width: auto;
             display: inline-block;
             padding:100px 0 100px 100px;
-             @include xsScreen{display: none;}
+             @include lgScreen {padding:100px 0 100px 220px;}
+             @include smScreen {padding: 100px 0 100px 250px;}
+             @include xsScreen {display: none;}
           }
         }
         .animated  {
@@ -74,8 +84,9 @@ section.our-services{
             position: absolute;
             left: -100px;
             top: 0;
-             @include xsScreen{left:0px;}
-             @include smScreen{left:0px;}
+            @include lgScreen {left: -20px;}
+             @include xsScreen {left:0px;}
+             @include smScreen {left:0px;}
             &:before {
                 content: '';
                 border: 1px solid #eee;
@@ -246,6 +257,7 @@ section.our-services{
                 width: 200px;
                 font-family: 'myriadPro-bold';
                 text-align:center;
+                @include xssScreen {font-size: 15px;width: 150px;padding: 8px 10px;}
             }
         }
 

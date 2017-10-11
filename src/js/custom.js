@@ -34,7 +34,6 @@ $(document).ready(function() {
 
     
     //form click effect
-
     $('.form-click').click(function(event) {
         event.stopPropagation();
         $("#formcontent").toggleClass("active")
@@ -73,7 +72,6 @@ $(document).ready(function() {
     //remove timeline animation class 
 
     //features-carousel
-
     $('.features-carousel').owlCarousel({
         stagePadding: 50,
         loop: true,
