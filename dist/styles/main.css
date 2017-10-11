@@ -10429,6 +10429,29 @@ section.abtServices #scrollStyle::-webkit-scrollbar-thumb {
     overflow-x: hidden; } }
 
 /**********services***************/
+/**********colocation-service***************/
+.colocation-service-hosting__content p {
+  margin: 25px 0 15px; }
+
+section.colocation-service-slider .box-content li {
+  background-image: none !important;
+  position: relative; }
+  section.colocation-service-slider .box-content li:before {
+    content: "\f054";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 10px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    left: 5%;
+    top: 10%; }
+
+.ww-colocation-facilities .middle-content .features-content .feature-box p {
+  margin: 25px auto; }
+
+/**********colocation-service***************/
 /* The animation code */
 @-webkit-keyframes flash {
   0% {
