@@ -1,11 +1,20 @@
 $white:#fff;
 
 // media queries
+$xxs-width:321px;
 $xss-width:481px;
 $xs-width: 768px;
 $sm-width: 981px;
 $md-width: 1025px;
 $lg-width: 1920px;
+
+
+//(max-width:320px)
+@mixin xxsScreen {
+  @media (max-width: #{$xxs-width - 1px}) {
+    @content;
+  }
+}
 
 
 //(max-width:480px)
