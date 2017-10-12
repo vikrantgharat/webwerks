@@ -871,6 +871,25 @@ section.abtServices {
     }
 }
 
+.value-server{
+    .middle-content{
+        .hosting-plans-content{ 
+            .plan-box{
+                min-height: auto;
+                .plans-details{ 
+                    p{
+                        display: block;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .features-content{
+            margin-bottom: 60px;
+        }
+    }
+}
+
 section.colocation-service-slider{
     .box-content {
         li{
