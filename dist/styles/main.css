@@ -10433,6 +10433,15 @@ section.abtServices #scrollStyle::-webkit-scrollbar-thumb {
 .colocation-service-hosting__content p {
   margin: 25px 0 15px; }
 
+.value-server .middle-content .hosting-plans-content .plan-box {
+  min-height: auto; }
+  .value-server .middle-content .hosting-plans-content .plan-box .plans-details p {
+    display: block;
+    text-align: center; }
+
+.value-server .middle-content .features-content {
+  margin-bottom: 60px; }
+
 section.colocation-service-slider .box-content li {
   background-image: none !important;
   position: relative; }
