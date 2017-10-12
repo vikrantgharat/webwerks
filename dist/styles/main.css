@@ -10457,10 +10457,31 @@ section.colocation-service-slider .box-content li {
     left: 5%;
     top: 10%; }
 
+.ww-colocation-facilities .middle-content .features-content .feature-box:hover .fa-key {
+  color: #fff; }
+
 .ww-colocation-facilities .middle-content .features-content .feature-box p {
   margin: 25px auto; }
 
+.ww-colocation-facilities .middle-content .features-content .feature-box .fa-key {
+  font-size: 26px;
+  /* Rotate div */
+  -ms-transform: rotate(-45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-45deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(-45deg); }
+
 /**********colocation-service***************/
+/**********migration-service***************/
+.benefits-webwerks__maintitle {
+  margin: 15px 0; }
+
+.benefits-webwerks__submaintitle {
+  font-size: 14px;
+  margin: 15px 0; }
+
+/**********migration-service***************/
 /* The animation code */
 @-webkit-keyframes flash {
   0% {
