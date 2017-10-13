@@ -6090,7 +6090,7 @@ header.header-bg .navbar-default {
             width: 125px; } }
 
 .windows-hosting-banner .banner-title h2 span {
-  width: 210px; }
+  width: auto; }
 
 .enterprise-banner .banner-title h2 span {
   width: 250px; }
@@ -6247,6 +6247,8 @@ header.header-bg .navbar-default {
         .middle-content .hosting-plans-content .tab-content .row {
           padding-right: 15px;
           padding-left: 15px; } }
+  .middle-content .hosting-plans-content-center p {
+    margin: 0 auto 11px; }
   .middle-content .features-content {
     margin-top: 60px;
     /*position: relative;*/ }
@@ -7573,6 +7575,14 @@ button.contact-submit-btn {
   color: inherit;
   text-decoration: none; }
 
+.fullWidth-wrapper table thead {
+  background-color: rgba(5, 45, 117, 0.95);
+  color: #fff; }
+
+.fullWidth-wrapper table th, .fullWidth-wrapper table td {
+  padding: 5px;
+  font-weight: normal; }
+
 .mainSearchWrap {
   position: fixed;
   width: 60%;
@@ -7978,6 +7988,7 @@ button.contact-submit-btn {
     font-size: 2em; }
   .discountSecWrap ul {
     background-color: #272d5d;
+    border: solid 1px #272d5d;
     color: #9297ad;
     padding: 20px 25px; }
     .discountSecWrap ul h4 {
@@ -7989,6 +8000,8 @@ button.contact-submit-btn {
       margin-right: 10px;
       font-size: 3.2em;
       vertical-align: text-bottom; }
+  .discountSecWrap ul:hover {
+    border: solid 1px #9297ad; }
 
 @-webkit-keyframes fadeInUp {
   from {
@@ -9343,7 +9356,7 @@ section.our-services .serivces-content .owl-dots .owl-dot.active:after {
   .point1 .path {
     stroke-dasharray: 88;
     stroke-dashoffset: 88;
-    animation: point1LineAnim 0.5s linear 0.5s forwards; }
+    animation: point1LineAnim 0.2s linear 0.5s forwards; }
   .point1 .topRect {
     opacity: 0;
     animation: dot 0.1s linear 1.1s forwards; }
@@ -9364,7 +9377,7 @@ section.our-services .serivces-content .owl-dots .owl-dot.active:after {
   .point2 .path {
     stroke-dasharray: 320;
     stroke-dashoffset: 320;
-    animation: point2LineAnim 0.5s linear 1.5s forwards; }
+    animation: point2LineAnim 0.2s linear 1.5s forwards; }
   .point2 .topRect {
     opacity: 0;
     animation: dot 0.1s linear 2.1s forwards; }
@@ -9385,7 +9398,7 @@ section.our-services .serivces-content .owl-dots .owl-dot.active:after {
   .point3 .path {
     stroke-dasharray: 285;
     stroke-dashoffset: 285;
-    animation: point3LineAnim 0.5s linear 2.5s forwards; }
+    animation: point3LineAnim 0.2s linear 2.5s forwards; }
   .point3 .topRect {
     opacity: 0;
     animation: dot 0.1s linear 3.1s forwards; }
@@ -9406,7 +9419,7 @@ section.our-services .serivces-content .owl-dots .owl-dot.active:after {
   .point4 .path {
     stroke-dasharray: 250;
     stroke-dashoffset: 250;
-    animation: point4LineAnim 0.5s linear 3.5s forwards; }
+    animation: point4LineAnim 0.2s linear 3.5s forwards; }
   .point4 .topRect {
     opacity: 0;
     animation: dot 0.1s linear 4.1s forwards; }
@@ -9427,7 +9440,7 @@ section.our-services .serivces-content .owl-dots .owl-dot.active:after {
   .point5 .path {
     stroke-dasharray: 280;
     stroke-dashoffset: 280;
-    animation: point5LineAnim 0.5s linear 4.5s forwards; }
+    animation: point5LineAnim 0.2s linear 4.5s forwards; }
   .point5 .topRect {
     opacity: 0;
     animation: dot 0.1s linear 5.1s forwards; }
@@ -9448,7 +9461,7 @@ section.our-services .serivces-content .owl-dots .owl-dot.active:after {
   .point6 .path {
     stroke-dasharray: 260;
     stroke-dashoffset: 260;
-    animation: point6LineAnim 0.5s linear 5.5s forwards; }
+    animation: point6LineAnim 0.2s linear 5.5s forwards; }
   .point6 .topRect {
     opacity: 0;
     animation: dot 0.1s linear 6.1s forwards; }
@@ -9469,7 +9482,7 @@ section.our-services .serivces-content .owl-dots .owl-dot.active:after {
   .point7 .path {
     stroke-dasharray: 125;
     stroke-dashoffset: 125;
-    animation: point7LineAnim 0.5s linear 6.5s forwards; }
+    animation: point7LineAnim 0.2s linear 6.5s forwards; }
   .point7 .topRect {
     opacity: 0;
     animation: dot 0.1s linear 7.1s forwards; }
@@ -9490,7 +9503,7 @@ section.our-services .serivces-content .owl-dots .owl-dot.active:after {
   .point8 .path {
     stroke-dasharray: 185;
     stroke-dashoffset: 185;
-    animation: point8LineAnim 0.5s linear 7.5s forwards; }
+    animation: point8LineAnim 0.2s linear 7.5s forwards; }
   .point8 .topRect {
     opacity: 0;
     animation: dot 0.1s linear 8.1s forwards; }
@@ -9511,7 +9524,7 @@ section.our-services .serivces-content .owl-dots .owl-dot.active:after {
   .point9 .path {
     stroke-dasharray: 220;
     stroke-dashoffset: 220;
-    animation: point9LineAnim 0.5s linear 8.5s forwards; }
+    animation: point9LineAnim 0.2s linear 8.5s forwards; }
   .point9 .topRect {
     opacity: 0;
     animation: dot 0.1s linear 9.1s forwards; }
@@ -10095,11 +10108,12 @@ section.abtUs {
       section.abtUs .timeline .event.right-event:first-child {
         top: 0; } }
   section.abtUs .timeline h4 {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 50px;
     margin: 0;
     color: #302f2f;
-    font-family: 'myriadPro-bold'; }
+    font-family: 'myriadPro-bold';
+    text-align: center; }
   section.abtUs .timeline p {
     margin-top: 25px;
     color: #747474;

@@ -32,7 +32,7 @@ $lLengthNum: (88) (320) (285) (250) (280) (260) (125) (185) (220);
       }
       .path {
           @include lineLength(#{$lLength});
-          animation: point#{$i}LineAnim 0.5s linear #{$i - 0.5}s forwards;
+          animation: point#{$i}LineAnim 0.2s linear #{$i - 0.5}s forwards;
       }
       .topRect{
           opacity: 0;

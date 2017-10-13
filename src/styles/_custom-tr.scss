@@ -65,7 +65,7 @@ header.header-bg .navbar-default {
 }
 
 .windows-hosting-banner .banner-title h2 span {
-    width: 210px;
+    width:auto;
 }
 
 .enterprise-banner .banner-title h2 span {
@@ -253,7 +253,7 @@ header.header-bg .navbar-default {
             }
         }
     }
-
+    .hosting-plans-content-center p {margin: 0 auto 11px;}
     .features-content {
         margin-top: 60px;
         /*position: relative;*/
