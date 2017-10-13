@@ -1176,7 +1176,7 @@ $colour3;
         left: 0px;
         animation-duration: 0.4s;
         opacity: 1;
-        visibility: visible;
+        display: block;
     }
 }
 
@@ -1191,7 +1191,7 @@ $colour3;
     animation-name: zoomOut;
     animation-duration: 0.4s;
     opacity: 0;
-    visibility: hidden;
+    display: none;
     padding: 10px 0;
 
     a {
@@ -1207,7 +1207,7 @@ $colour3;
             text-decoration: none;
         }
     }
-    li:last-child a{ border-bottom: none;}
+    li:last-child > a{ border-bottom: none;}
     .sub-dropdown {
         position: relative;
         .sub-dropdown-menu {
@@ -1222,6 +1222,7 @@ $colour3;
             animation-name: zoomOut;
             animation-duration: 0.4s;
             opacity: 0;
+            display: none;
         }
         &:hover {
                 
@@ -1232,6 +1233,7 @@ $colour3;
                 animation-duration: 0.4s;
                 opacity: 1;
                 margin-left: 5px;
+                display: block;
 
                  li:first-child a:after{
                     content: '';

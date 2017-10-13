@@ -917,8 +917,21 @@ section.colocation-service-slider{
     .middle-content{
         .features-content {
             .feature-box {
+                &:hover{
+                   .fa-key{
+                    color: #fff;
+                   } 
+                }
                 p{
                     margin: 25px auto;
+                }
+
+                .fa-key{
+                    font-size: 26px;
+                    /* Rotate div */
+                    -ms-transform: rotate(-45deg); /* IE 9 */
+                    -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+                    transform: rotate(-45deg);
                 }  
             }
         }
@@ -927,6 +940,18 @@ section.colocation-service-slider{
 
 /**********colocation-service***************/
 
+/**********migration-service***************/
+.benefits-webwerks{
+    &__maintitle{
+        margin: 15px 0;
+    }
+    &__submaintitle{
+        font-size: 14px;
+        margin: 15px 0;
+    }
+}
+
+/**********migration-service***************/
 
 /* The animation code */
 
