@@ -8016,7 +8016,7 @@ button.contact-submit-btn {
   left: 0px;
   animation-duration: 0.4s;
   opacity: 1;
-  visibility: visible; }
+  display: block; }
 
 .custom-dropdown-menu {
   position: absolute;
@@ -8029,7 +8029,7 @@ button.contact-submit-btn {
   animation-name: zoomOut;
   animation-duration: 0.4s;
   opacity: 0;
-  visibility: hidden;
+  display: none;
   padding: 10px 0; }
   .custom-dropdown-menu a {
     font-size: 16px;
@@ -8042,7 +8042,7 @@ button.contact-submit-btn {
     .custom-dropdown-menu a:hover {
       color: #ffffff;
       text-decoration: none; }
-  .custom-dropdown-menu li:last-child a {
+  .custom-dropdown-menu li:last-child > a {
     border-bottom: none; }
   .custom-dropdown-menu .sub-dropdown {
     position: relative; }
@@ -8057,14 +8057,16 @@ button.contact-submit-btn {
       -webkit-animation-name: zoomOut;
       animation-name: zoomOut;
       animation-duration: 0.4s;
-      opacity: 0; }
+      opacity: 0;
+      display: none; }
     .custom-dropdown-menu .sub-dropdown:hover .sub-dropdown-menu {
       animation-name: fadeInUp;
       top: 0%;
       left: 100%;
       animation-duration: 0.4s;
       opacity: 1;
-      margin-left: 5px; }
+      margin-left: 5px;
+      display: block; }
       .custom-dropdown-menu .sub-dropdown:hover .sub-dropdown-menu li:first-child a:after {
         content: '';
         position: absolute;
