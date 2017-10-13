@@ -6418,7 +6418,7 @@ ul.feature-tabs li.active:after {
     position: relative; }
   .additional-features-content p {
     font-family: 'myriadPro-regular';
-    font-size: 18px;
+    font-size: 16px;
     color: #737272;
     text-transform: capitalize; }
 
