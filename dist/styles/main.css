@@ -6081,9 +6081,9 @@ header.header-bg .navbar-default {
         background-color: #339ede;
         margin-right: 10px;
         width: auto;
-        padding: 2px 8px;
+        padding: 2px 18px;
         display: inline-block;
-        line-height: 1.8;
+        line-height: 1.5;
         text-align: center; }
         @media (max-width: 767px) {
           .top-banner .banner-title h2 span {
@@ -6093,7 +6093,7 @@ header.header-bg .navbar-default {
   width: auto; }
 
 .enterprise-banner .banner-title h2 span {
-  width: 250px; }
+  width: auto; }
 
 .vps-banner-inner-image {
   position: absolute;
@@ -6419,7 +6419,8 @@ ul.feature-tabs li.active:after {
   .additional-features-content p {
     font-family: 'myriadPro-regular';
     font-size: 18px;
-    color: #737272; }
+    color: #737272;
+    text-transform: capitalize; }
 
 /*News Page*/
 .news-banner, .contact-banner {
@@ -6624,7 +6625,7 @@ span.post-date.no-bg {
   z-index: 0; }
 
 .contact-banner h2 span {
-  width: 277px !important; }
+  width: auto; }
 
 .contact-middle-content {
   background: url("../../src/img/contact/contact-middle-bg.png") #faf9f9;
@@ -7683,6 +7684,63 @@ button.contact-submit-btn {
   100% {
     transform: scale(1);
     opacity: 1; } }
+
+.datacenters {
+  background-color: #fff; }
+  .datacenters h4 {
+    font-weight: bold;
+    margin-bottom: 20px; }
+  .datacenters .features-content .feature-box {
+    min-height: 299px; }
+  .datacenters .datacentersLocation div:first-child {
+    border-right: solid 1px #dad9d9; }
+  .datacenters .datacentersLocation div:nth-child(2) {
+    padding-left: 65px; }
+    @media (max-width: 767px) {
+      .datacenters .datacentersLocation div:nth-child(2) {
+        padding-left: 15px; } }
+  .datacenters .datacentersLocation li {
+    background: url("../../src/img/location.png") no-repeat left center;
+    padding: 5px 35px 5px 35px;
+    font-weight: 500; }
+  .datacenters .advantages {
+    margin-top: 45px;
+    font-size: 20px; }
+    .datacenters .advantages h4 {
+      margin-bottom: 20px; }
+    .datacenters .advantages .whyUs {
+      padding-right: 20px; }
+      .datacenters .advantages .whyUs p {
+        line-height: 1.6; }
+    .datacenters .advantages .keyAdvantages {
+      border-left: solid 1px #dad9d9;
+      padding-left: 35px; }
+    .datacenters .advantages li {
+      background: url("../../src/img/datacenters/keyAdvantages1.png") no-repeat left top;
+      padding: 5px 35px 5px 35px;
+      font-weight: 500;
+      width: 50%;
+      float: left;
+      padding: 0 15px 0 100px; }
+      @media (max-width: 480px) {
+        .datacenters .advantages li {
+          width: 100%;
+          padding: 15px 15px 15px 100px; } }
+  @media (max-width: 480px) and (max-width: 320px) {
+    .datacenters .advantages li {
+      width: 100%;
+      padding: 15px 15px 15px 100px; } }
+      .datacenters .advantages li li:nth-child(2) {
+        background: url("../../src/img/datacenters/keyAdvantages2.png") no-repeat left top; }
+      .datacenters .advantages li li:nth-child(3) {
+        background: url("../../src/img/datacenters/keyAdvantages3.png") no-repeat left top; }
+      .datacenters .advantages li li:nth-child(4) {
+        background: url("../../src/img/datacenters/keyAdvantages4.png") no-repeat left top; }
+      .datacenters .advantages li p {
+        font-size: 15px; }
+
+.additional-features-content-dc .feature-img-circle {
+  margin: 25px auto 0; }
 
 .clientLogoCarouselWrap .clientLogoWrap {
   padding: 30px 0;
@@ -9036,7 +9094,7 @@ footer .bottomFooter p {
 .service-banner .banner-title {
   left: 10%; }
   .service-banner .banner-title h2 span {
-    width: 280px; }
+    width: auto; }
     @media (max-width: 480px) {
       .service-banner .banner-title h2 span {
         width: 180px;

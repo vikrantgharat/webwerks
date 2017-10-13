@@ -775,6 +775,47 @@ $colour3;
     }
 }
 
+
+.datacenters {
+        background-color: #fff;
+        h4{font-weight: bold;margin-bottom: 20px;}
+        .features-content{
+            .feature-box{min-height: 299px;}
+        }
+        .datacentersLocation{
+              div:first-child{border-right: solid 1px #dad9d9;} 
+              div:nth-child(2){
+                padding-left: 65px;
+                @include xsScreen {padding-left:15px;}
+            }            
+              li{background:url('../../src/img/location.png') no-repeat left center;padding: 5px 35px 5px 35px;font-weight: 500;}              
+        } 
+
+        .advantages {
+            h4{margin-bottom: 20px;}
+            margin-top:45px;
+            font-size: 20px;
+            .whyUs{
+                padding-right: 20px;
+                p{line-height:1.6;}
+            }
+            .keyAdvantages{border-left: solid 1px #dad9d9;padding-left: 35px;}
+            li{background:url('../../src/img/datacenters/keyAdvantages1.png') no-repeat left top;padding: 5px 35px 5px 35px;font-weight: 500;width: 50%;float: left;padding:0 15px 0 100px;
+              @include xssScreen {width: 100%;padding: 15px 15px 15px 100px;
+              @include  xxsScreen {width: 100%;padding: 15px 15px 15px 100px;}
+            }
+            li:nth-child(2){background:url('../../src/img/datacenters/keyAdvantages2.png') no-repeat left top;}
+            li:nth-child(3){background:url('../../src/img/datacenters/keyAdvantages3.png') no-repeat left top;}
+            li:nth-child(4){background:url('../../src/img/datacenters/keyAdvantages4.png') no-repeat left top;}
+            p{font-size: 15px;}
+           }
+       }
+    }
+
+.additional-features-content-dc{
+    .feature-img-circle{margin: 25px auto 0;}
+}
+
 .clientLogoCarouselWrap {
     .clientLogoWrap {
         padding: 30px 0;

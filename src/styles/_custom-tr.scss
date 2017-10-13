@@ -53,10 +53,10 @@ header.header-bg .navbar-default {
                 background-color: #339ede;
                 margin-right: 10px;
                 width: auto;
-                padding: 2px 8px;
+                padding: 2px 18px;
                 display: inline-block;
                 // height: 66px;
-                line-height: 1.8;
+                line-height: 1.5;
                 text-align: center;
                 @include xsScreen {width: 125px;}
             }
@@ -69,7 +69,7 @@ header.header-bg .navbar-default {
 }
 
 .enterprise-banner .banner-title h2 span {
-    width: 250px;
+    width: auto;
 }
 
 .vps-banner-inner-image{
@@ -476,6 +476,7 @@ ul.feature-tabs li.active:after {
         font-family: 'myriadPro-regular';
         font-size: 18px;
         color: #737272;
+        text-transform: capitalize;;
     }
 }
 
@@ -696,7 +697,7 @@ span.post-date.no-bg {
     }
 
     h2 span {
-        width: 277px !important;
+        width: auto;
     }
 }
 

@@ -12,7 +12,7 @@
    .banner-title{
      left:10%;
     h2{
-        span{width:280px;
+        span{width:auto;
         @include xssScreen {width:180px;line-height: 1.6;}
        }
        @include xssScreen {font-size: 24px;}
