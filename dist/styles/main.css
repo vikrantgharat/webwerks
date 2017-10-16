@@ -7685,6 +7685,9 @@ button.contact-submit-btn {
     transform: scale(1);
     opacity: 1; } }
 
+.text-center {
+  text-align: center !important; }
+
 .datacenters h4 {
   font-weight: bold;
   margin-bottom: 20px; }
@@ -7744,6 +7747,40 @@ button.contact-submit-btn {
 
 .additional-features-content-dc .feature-img-circle {
   margin: 25px auto 0; }
+
+.dc-gallerySlider {
+  margin: 15px 0 45px; }
+  .dc-gallerySlider .slider-container {
+    position: relative;
+    display: block; }
+  .dc-gallerySlider .slider-container .slider .content img {
+    width: 100%;
+    height: 400px; }
+    @media (min-width: 481px) and (max-width: 767px) {
+      .dc-gallerySlider .slider-container .slider .content img {
+        height: auto; } }
+    @media (max-width: 320px) {
+      .dc-gallerySlider .slider-container .slider .content img {
+        height: auto; } }
+  .dc-gallerySlider .slider-container .slider-controls a {
+    position: absolute;
+    top: 45%;
+    z-index: 100;
+    color: #777; }
+    .dc-gallerySlider .slider-container .slider-controls a:hover {
+      color: rgba(5, 45, 117, 0.95); }
+  .dc-gallerySlider .slider-container .slider-controls a.slider-left {
+    left: -25px; }
+  .dc-gallerySlider .slider-container .slider-controls a.slider-right {
+    right: -25px; }
+  .dc-gallerySlider .thumbnail-slider-container {
+    margin-top: 5px; }
+  .dc-gallerySlider .thumbnail-slider .content {
+    padding: 1px; }
+  .dc-gallerySlider .thumbnail-slider .owl-item.active.center {
+    border: 1px solid #777; }
+  .dc-gallerySlider .owl-stage {
+    transform: translate3d(0px, 0px, 0px); }
 
 .clientLogoCarouselWrap .clientLogoWrap {
   padding: 30px 0;
