@@ -10596,6 +10596,16 @@ section.colocation-service-slider .box-content li {
   margin: 15px 0; }
 
 /**********migration-service***************/
+/**********data center**********/
+.thumbnail {
+  margin-bottom: 6px; }
+
+.carousel-control.left, .carousel-control.right {
+  background-image: none;
+  margin-top: 10%;
+  width: 5%; }
+
+/**********data center**********/
 /* The animation code */
 @-webkit-keyframes flash {
   0% {
