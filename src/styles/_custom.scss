@@ -1158,6 +1158,13 @@ $colour3;
     font-size: 1.5em;
 }
 
+
+header{
+    nav{
+        .navbar-brand{position: relative;z-index: 999;}
+    }
+}
+
 @-webkit-keyframes bounceAnim {
     0% {
         transform: translateY(0);

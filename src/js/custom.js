@@ -134,7 +134,6 @@ $(document).ready(function() {
     });
 
     //ourservices carousel
-
     $('.ourservices-carousel').owlCarousel({
         mouseDrag: false,
         loop: true,
