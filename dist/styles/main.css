@@ -3943,7 +3943,8 @@ tbody.collapse.in {
   .navbar-default .navbar-text {
     color: #777; }
   .navbar-default .navbar-nav > li > a {
-    color: #777; }
+    color: #777;
+    font-size: 15px; }
     .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
       color: #333;
       background-color: transparent; }
@@ -6075,7 +6076,7 @@ header.header-bg .navbar-default {
       margin: 0; }
       @media (max-width: 767px) {
         .top-banner .banner-title h2 {
-          font-size: 30px; } }
+          font-size: 28px; } }
       .top-banner .banner-title h2 span {
         font-weight: bold;
         background-color: #339ede;
@@ -6085,9 +6086,6 @@ header.header-bg .navbar-default {
         display: inline-block;
         line-height: 1.5;
         text-align: center; }
-        @media (max-width: 767px) {
-          .top-banner .banner-title h2 span {
-            width: 125px; } }
 
 .windows-hosting-banner .banner-title h2 span {
   width: auto; }
@@ -6657,10 +6655,13 @@ span.post-date.no-bg {
   border: solid 1px #d6d6d6;
   background: #fff;
   padding: 50px;
-  border-radius: 6px; }
+  border-radius: 6px;
+  width: 65%;
+  margin: 0 auto 30px; }
   @media (max-width: 767px) {
     .contact-form-grid {
-      padding: 30px; } }
+      padding: 30px;
+      width: 95%; } }
 
 /* form starting stylings ------------------------------- */
 .contact-form .group {
@@ -6669,7 +6670,7 @@ span.post-date.no-bg {
   width: 100%; }
 
 .contact-form input {
-  font-size: 18px;
+  font-size: 16px;
   padding: 0.625em 0.625em 0.625em 0.3125em;
   display: block;
   width: 100%;
@@ -6678,7 +6679,7 @@ span.post-date.no-bg {
   background: transparent; }
 
 .contact-form textarea {
-  font-size: 18px;
+  font-size: 16px;
   padding: 0.625em 0.625em 0.625em 0.3125em;
   display: block;
   width: 100% !important;
@@ -6698,7 +6699,7 @@ span.post-date.no-bg {
   height: auto;
   font-family: "myriadPro-regular";
   color: #757575;
-  font-size: 18px;
+  font-size: 16px;
   -webkit-appearance: none; }
   @media (max-width: 767px) {
     .contact-form select.form-control {
@@ -6717,7 +6718,7 @@ img.form-icon {
 .contact-form label {
   font-family: "myriadPro-regular";
   color: #757575;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: normal;
   position: absolute;
   pointer-events: none;
@@ -6742,7 +6743,7 @@ img.form-icon {
 .contact-form input[type="email"]:valid ~ label {
   top: -20px;
   left: -2px;
-  font-size: 18px;
+  font-size: 16px;
   color: #065289;
   font-family: "myriadPro-regular"; }
   @media (max-width: 767px) {
@@ -6787,23 +6788,29 @@ img.form-icon {
 
 button.contact-submit-btn {
   float: right;
+  padding: 10px;
   width: 175px;
-  height: 50px;
-  line-height: 50px;
   text-align: center;
   text-transform: uppercase;
-  font-size: 26px;
+  font-size: 16px;
   color: #fff;
   background: #339ede;
   border: none;
   font-family: "myriadPro-bold";
   border-radius: 26px;
-  margin-top: 25px; }
+  margin-top: 5px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all; }
   button.contact-submit-btn:focus {
     outline: none; }
+  button.contact-submit-btn:hover {
+    background-color: #ffcd00; }
   @media (max-width: 767px) {
     button.contact-submit-btn {
-      float: none; } }
+      float: none;
+      margin-top: 35px;
+      width: 100%; } }
   @media (min-width: 768px) and (max-width: 980px) {
     button.contact-submit-btn {
       margin-top: 0; } }
@@ -7685,6 +7692,9 @@ button.contact-submit-btn {
     transform: scale(1);
     opacity: 1; } }
 
+.margin-bottom-20 {
+  margin-bottom: 20px; }
+
 .text-center {
   text-align: center !important; }
 
@@ -7717,12 +7727,12 @@ button.contact-submit-btn {
   .datacenters .advantages .whyUs {
     padding-right: 20px; }
     .datacenters .advantages .whyUs p {
-      line-height: 1.6; }
+      line-height: 1.6;
+      font-size: 1.8rem; }
   .datacenters .advantages .keyAdvantages {
     border-left: solid 1px #dad9d9;
     padding-left: 35px; }
   .datacenters .advantages li {
-    background: url("../../src/img/datacenters/keyAdvantages1.png") no-repeat left top;
     padding: 5px 35px 5px 35px;
     font-weight: 500;
     width: 50%;
@@ -7736,14 +7746,16 @@ button.contact-submit-btn {
     .datacenters .advantages li {
       width: 100%;
       padding: 15px 15px 15px 100px; } }
-    .datacenters .advantages li li:nth-child(2) {
-      background: url("../../src/img/datacenters/keyAdvantages2.png") no-repeat left top; }
-    .datacenters .advantages li li:nth-child(3) {
-      background: url("../../src/img/datacenters/keyAdvantages3.png") no-repeat left top; }
-    .datacenters .advantages li li:nth-child(4) {
-      background: url("../../src/img/datacenters/keyAdvantages4.png") no-repeat left top; }
     .datacenters .advantages li p {
       font-size: 15px; }
+  .datacenters .advantages li:first-child {
+    background: url("../../src/img/datacenters/keyAdvantages1.png") no-repeat left top; }
+  .datacenters .advantages li:nth-child(2) {
+    background: url("../../src/img/datacenters/keyAdvantages2.png") no-repeat left top; }
+  .datacenters .advantages li:nth-child(3) {
+    background: url("../../src/img/datacenters/keyAdvantages3.png") no-repeat left top; }
+  .datacenters .advantages li:nth-child(4) {
+    background: url("../../src/img/datacenters/keyAdvantages4.png") no-repeat left top; }
 
 .additional-features-content-dc .feature-img-circle {
   margin: 25px auto 0; }
@@ -7876,7 +7888,8 @@ button.contact-submit-btn {
       -ms-filter: grayscale(0%);
       -o-filter: grayscale(0%);
       filter: grayscale(0%);
-      opacity: 1; }
+      opacity: 1;
+      transform: scale(1.1, 1.1) translateY(-50%); }
     .awards .awardBox:hover .awardCaption {
       color: #06619c; }
   .awards .awardBox img {
@@ -7950,14 +7963,18 @@ button.contact-submit-btn {
       border: 1px solid #d5d5d5;
       margin: 0 auto; } }
   .partners .partnersBox:hover {
-    border: 1px solid transparent;
     cursor: pointer; }
     .partners .partnersBox:hover img {
       -webkit-filter: grayscale(0%);
       -ms-filter: grayscale(0%);
       -o-filter: grayscale(0%);
       filter: grayscale(0%);
-      opacity: 1; }
+      opacity: 1;
+      -webkit-transition: all 1s;
+      -ms-transition: all 1s;
+      -o-transition: all 1s;
+      transition: all 1s;
+      transform: scale(1.1, 1.1) translateY(-50%); }
   .partners .partnersBox img {
     width: auto;
     max-width: 100%;
@@ -8006,10 +8023,10 @@ button.contact-submit-btn {
   min-height: 170px;
   margin: 0;
   background-color: #fff;
-  -webkit-transition: all 1s;
-  -ms-transition: all 1s;
-  -o-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
   position: relative; }
   @media (max-width: 767px) {
     .clients .clientsBox {
@@ -8023,7 +8040,8 @@ button.contact-submit-btn {
       -ms-filter: grayscale(0%);
       -o-filter: grayscale(0%);
       filter: grayscale(0%);
-      opacity: 1; }
+      opacity: 1;
+      transform: scale(1.1, 1.1) translateY(-50%); }
   .clients .clientsBox img {
     width: auto;
     max-width: 100%;
@@ -8033,10 +8051,10 @@ button.contact-submit-btn {
     -ms-filter: grayscale(100%);
     -o-filter: grayscale(100%);
     filter: grayscale(100%);
-    -webkit-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
+    -webkit-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
     cursor: pointer;
     opacity: 0.5;
     position: absolute;
@@ -8058,6 +8076,9 @@ button.contact-submit-btn {
 header nav .navbar-brand {
   position: relative;
   z-index: 999; }
+
+.colocation-service-hosting__content img.img-responsive {
+  margin: 0 auto 25px; }
 
 @-webkit-keyframes bounceAnim {
   0% {
@@ -9173,7 +9194,7 @@ section.our-services {
 
 section.our-services .serivces-content {
   position: relative;
-  margin: 160px 0; }
+  margin: 50px 0; }
   section.our-services .serivces-content .owl-item {
     display: table;
     visibility: hidden; }
@@ -9191,10 +9212,10 @@ section.our-services .serivces-content {
     section.our-services .serivces-content .owl-carousel .item img {
       width: auto;
       display: inline-block;
-      padding: 100px 0 100px 100px; }
+      padding: 100px 0 20px 100px; }
       @media (min-width: 1025px) and (max-width: 1919px) {
         section.our-services .serivces-content .owl-carousel .item img {
-          padding: 100px 0 100px 220px; } }
+          padding: 100px 0 20px 220px; } }
       @media (min-width: 768px) and (max-width: 980px) {
         section.our-services .serivces-content .owl-carousel .item img {
           padding: 100px 0 100px 250px; } }
@@ -9227,7 +9248,7 @@ section.our-services .serivces-content {
       border: 1px solid #eee;
       position: absolute;
       height: 100%;
-      top: -40%;
+      top: -5%;
       left: 13px;
       z-index: -1; }
     section.our-services .serivces-content .owl-dots:after {
@@ -9235,7 +9256,7 @@ section.our-services .serivces-content {
       border: 1px solid #eee;
       position: absolute;
       height: 100%;
-      bottom: -44%;
+      bottom: -5%;
       left: 13px;
       z-index: -1; }
     section.our-services .serivces-content .owl-dots .owl-dot {
@@ -9936,7 +9957,7 @@ nav#spy {
 
 input {
   font-size: 12px;
-  padding: 0.625em 0.625em 0.625em 0.3125em;
+  padding: 0.625em 2.825em 0.625em 0.3125em;
   color: #000;
   display: block;
   width: 12.75em;
@@ -9945,7 +9966,7 @@ input {
 
 textarea {
   font-size: 12px;
-  padding: 0.625em 0.625em 0.625em 0.3125em;
+  padding: 0.625em 2.825em 0.625em 0.3125em;
   color: #000;
   display: block;
   width: 100%;
@@ -9985,24 +10006,19 @@ label {
 
 /* active state */
 input:focus ~ label,
-input:valid ~ label {
-  top: -7px;
-  left: -2px;
-  font-size: 10px;
-  color: #065289; }
-
+input:valid ~ label,
 input[type="email"]:focus ~ label,
 input[type="email"]:valid ~ label {
   top: -7px;
   left: -2px;
-  font-size: 10px;
+  font-size: 11px;
   color: #065289; }
 
 textarea:focus ~ label,
 textarea:valid ~ label {
   top: -14px !important;
   left: -2px;
-  font-size: 10px;
+  font-size: 11px;
   color: #065289; }
 
 .form-group.last-group.brief label {
@@ -10051,12 +10067,13 @@ textarea:focus ~ .bar:after {
   text-align: center;
   border: none;
   border-radius: 30px;
-  width: 83%;
+  width: 85%;
   font-size: 14px;
   font-family: 'myriadPro-bold';
   float: right;
   -webkit-transition: 0.5s;
-  transition: 0.5s; }
+  transition: 0.5s;
+  padding: 8px 10px; }
   .submit:hover {
     background-color: #ffd800;
     color: #065289; }

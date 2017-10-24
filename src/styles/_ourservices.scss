@@ -43,7 +43,7 @@ section.our-services{
 section.our-services{
     .serivces-content{
         position: relative;
-        margin: 160px 0;
+        margin: 50px 0;
         .owl-item {
             display: table;
             visibility: hidden;
@@ -61,8 +61,8 @@ section.our-services{
           img{
             width: auto;
             display: inline-block;
-            padding:100px 0 100px 100px;
-             @include lgScreen {padding:100px 0 100px 220px;}
+            padding:100px 0 20px 100px;
+             @include lgScreen {padding:100px 0 20px 220px;}
              @include smScreen {padding: 100px 0 100px 250px;}
              @include xsScreen {display: none;}
           }
@@ -92,7 +92,7 @@ section.our-services{
                 border: 1px solid #eee;
                 position: absolute;
                 height: 100%;
-                top: -40%;
+                top: -5%;
                 left: 13px;
                 z-index: -1;
             }
@@ -101,7 +101,7 @@ section.our-services{
                 border: 1px solid #eee;
                 position: absolute;
                 height: 100%;
-                bottom: -44%;
+                bottom: -5%;
                 left: 13px;
                 z-index: -1;
             }

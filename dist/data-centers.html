@@ -410,17 +410,17 @@
                               <img src="../src/img/vps/feature-icon.png" alt="">
                               <h4>Instant Setup</h4>
                               <p>No need to schedule installation procedure
-                                  <br>because we do configure new servers
-                                  <br> instantly that allow customers
-                                  <br> to get started with it within no time.</p>
+                                  because we do configure new servers
+                                  instantly that allow customers
+                                   to get started with it within no time.</p>
                           </div>
                           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 feature-box">
                               <img src="../src/img/vps/feature-icon.png" alt="">
                               <h4>Superior Hardware</h4>
                               <p> Our motive is to deliver quality-oriented
-                                  <br> products and services. We abide by what
-                                  <br> we say and thus, offer top-notch hardware
-                                  <br> equipment for data storage.</p>
+                                   products and services. We abide by what
+                                  we say and thus, offer top-notch hardware
+                                  equipment for data storage.</p>
                           </div>                          
                       </div>
                   </div>
@@ -635,7 +635,7 @@
           scrollwheel: false
       });
 
-      var image = 'http://design.neosofttech.in/105/webWerks/Footer/images/map-pointer.png';
+      var image = '../src/img/mapIcon.png';
       var beachMarker = new google.maps.Marker({
           position: {lat: 19.141318, lng: 73.00883899999997},
           map: map,
@@ -643,6 +643,33 @@
       });
      }
       //   Customize Map JS Ends
+
+      $('.value-server .features-carousel').owlCarousel({
+      stagePadding: 50,
+      loop: true,
+      mouseDrag: true,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: true,
+      // autoHeight:true,
+      margin: 50,
+      nav: false,
+      responsive: {
+          0: {
+              items: 1
+          },
+          568: {
+              items: 2
+          },
+          768: {
+              items: 3
+          },
+          1000: {
+              items: 3
+          }
+      },
+      navText: ["<i class='icon icon-left-open-big'></i>", "<i class='icon icon-right-open-big'></i>"]
+    });
     </script>
 </body>
 

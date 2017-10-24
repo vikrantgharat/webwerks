@@ -46,7 +46,7 @@ header.header-bg .navbar-default {
             font-size: 40px;
             font-family: 'myriadPro-bold';
             margin: 0;
-            @include xsScreen {font-size: 30px;}
+            @include xsScreen {font-size: 28px;}
 
             span {
                 font-weight: bold;
@@ -58,7 +58,6 @@ header.header-bg .navbar-default {
                 // height: 66px;
                 line-height: 1.5;
                 text-align: center;
-                @include xsScreen {width: 125px;}
             }
         }
     }
@@ -743,7 +742,9 @@ span.post-date.no-bg {
     background: #fff;
     padding: 50px;
     border-radius: 6px;
-    @include xsScreen{padding: 30px;}
+    width: 65%;
+    margin: 0 auto 30px;
+    @include xsScreen {padding: 30px;width: 95%;}
 }
 
 
@@ -757,7 +758,7 @@ span.post-date.no-bg {
 }
 
 .contact-form input {
-    font-size: 18px;
+    font-size: 16px;
     padding: 0.625em 0.625em 0.625em 0.3125em;
     display: block;
     width: 100%;
@@ -768,7 +769,7 @@ span.post-date.no-bg {
 
 
 .contact-form textarea {
-    font-size: 18px;
+    font-size: 16px;
     padding: 0.625em 0.625em 0.625em 0.3125em;
     display: block;
     width: 100%!important;
@@ -789,7 +790,7 @@ span.post-date.no-bg {
     height: auto;
     font-family: "myriadPro-regular";
     color: #757575;
-    font-size: 18px;
+    font-size: 16px;
     -webkit-appearance: none;
     @include xsScreen{font-size: 20px;}
 }
@@ -813,7 +814,7 @@ img.form-icon {
 .contact-form label {
     font-family: "myriadPro-regular";
     color: #757575;
-    font-size:18px;
+    font-size:16px;
     font-weight: normal;
     position: absolute;
     pointer-events: none;
@@ -840,7 +841,7 @@ img.form-icon {
 .contact-form input[type="email"]:valid ~ label{
     top: -20px;
     left: -2px;
-    font-size: 18px;
+    font-size: 16px;
     color: #065289;
     font-family: "myriadPro-regular";
     @include xsScreen{font-size: 16px;top: -10px;}
@@ -891,22 +892,25 @@ img.form-icon {
 
 button.contact-submit-btn {
     float: right;
+    padding:10px;
     width: 175px;
-    height: 50px;
-    line-height: 50px;
     text-align: center;
     text-transform: uppercase;
-    font-size: 26px;
+    font-size:16px;
     color: #fff;
     background: #339ede;
     border: none;
     font-family: "myriadPro-bold";
     border-radius: 26px;
-    margin-top: 25px;
+    margin-top:5px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
     &:focus {
         outline: none;
     }
-    @include xsScreen{float:none;}
+    &:hover{background-color: #ffcd00;}
+    @include xsScreen{float:none;margin-top: 35px;width: 100%;}
     @include smScreen {
       margin-top:0;
     }

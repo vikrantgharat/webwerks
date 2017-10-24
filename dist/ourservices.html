@@ -257,7 +257,7 @@
     <section class="top-banner" role="banner">
         <div class="container">
             <div class="banner-title">
-                <h2 class="text text-uppercase"><span> Our Services </span> OFFERED </h2></div>
+                <h2 class="text text-uppercase"><span> Services </span> OFFERED </h2></div>
             <img src="../src/img/services/service-baner-inner-img.png" alt="" class="service-banner-inner-image banner-inner-image">
         </div>
     </section>
@@ -341,7 +341,8 @@
     <!--    Our Services Section Open    -->
     <section class="our-services">
         <div class="container">
-            <div class="row">
+            <div class="row">              
+             <!--    <h3 class="text-uppercase text-center">Our Services OFFERED</h3> -->
                 <div class="ourservices-carousel owl-carousel owl-theme">
                     <div class="col-md-12 col-sm-12 col-xs-12 serivces-content">
                         <div class="services-image-content">
@@ -752,6 +753,7 @@
     <script src="../src/js/typed.min.js"></script>
     <script src="http://design.neosofttech.in/61/vikrant/cdn/bootstrap-dropdownhover.min.js"></script>
     <script type="text/javascript" src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.mousewheel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
     <script src="../src/js/script.js"></script>
     <script src="../src/js/custom.js"></script>
     <!--   Customize Map   -->
@@ -766,7 +768,7 @@
             scrollwheel: false
         });
 
-        var image = 'http://design.neosofttech.in/105/webWerks/Footer/images/map-pointer.png';
+        var image = '../src/img/mapIcon.png';
         var beachMarker = new google.maps.Marker({
             position: { lat: 19.141318, lng: 73.00883899999997 },
             map: map,
@@ -827,7 +829,7 @@
             setAnimation($elemsToanim, 'in');
         });
 
-        owl.on('mousewheel', '.owl-stage', function(e) {
+        owl.on('mousewheel', '.owl-stage', _.throttle((function(e){
             if (e.deltaY > 0) {
                 console.log(e.deltaY);
                 owl.trigger('prev.owl');
@@ -836,10 +838,10 @@
                 owl.trigger('next.owl');
             }
             e.preventDefault();
-        });
+        }), 700));
 
     });
-    </script>
+  </script>
 </body>
 
 </html>

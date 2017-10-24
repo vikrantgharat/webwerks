@@ -774,7 +774,7 @@ $colour3;
         opacity: 1;
     }
 }
-
+.margin-bottom-20{margin-bottom: 20px;}
 .text-center{text-align: center!important;}
 .datacenters {
         // background-color: #fff;
@@ -797,18 +797,19 @@ $colour3;
             font-size: 20px;
             .whyUs{
                 padding-right: 20px;
-                p{line-height:1.6;}
+                p{line-height:1.6;font-size: 1.8rem;}
             }
             .keyAdvantages{border-left: solid 1px #dad9d9;padding-left: 35px;}
-            li{background:url('../../src/img/datacenters/keyAdvantages1.png') no-repeat left top;padding: 5px 35px 5px 35px;font-weight: 500;width: 50%;float: left;padding:0 15px 0 100px;
+            li{padding: 5px 35px 5px 35px;font-weight: 500;width: 50%;float: left;padding:0 15px 0 100px;
               @include xssScreen {width: 100%;padding: 15px 15px 15px 100px;
               @include  xxsScreen {width: 100%;padding: 15px 15px 15px 100px;}
-            }
+            }           
+            p{font-size: 15px;}
+           }
+            li:first-child{background:url('../../src/img/datacenters/keyAdvantages1.png') no-repeat left top;}
             li:nth-child(2){background:url('../../src/img/datacenters/keyAdvantages2.png') no-repeat left top;}
             li:nth-child(3){background:url('../../src/img/datacenters/keyAdvantages3.png') no-repeat left top;}
             li:nth-child(4){background:url('../../src/img/datacenters/keyAdvantages4.png') no-repeat left top;}
-            p{font-size: 15px;}
-           }
        }
     }
 
@@ -951,6 +952,7 @@ $colour3;
                 -o-filter: grayscale(0%);
                 filter: grayscale(0%);
                 opacity: 1;
+                transform:scale(1.1,1.1) translateY(-50%);
             }
             .awardCaption{
                 color: #06619c;
@@ -1031,7 +1033,7 @@ $colour3;
         position: relative;
         @include xsScreen {border: 1px solid #d5d5d5;margin: 0 auto;}
         &:hover{
-            border: 1px solid transparent;
+            // border: 1px solid transparent;
             cursor: pointer;
             img{
                 -webkit-filter: grayscale(0%);
@@ -1039,6 +1041,11 @@ $colour3;
                 -o-filter: grayscale(0%);
                 filter: grayscale(0%);
                 opacity: 1;
+                -webkit-transition: all 1s;
+                -ms-transition: all 1s;
+                -o-transition: all 1s;
+                transition: all 1s;
+                transform:scale(1.1,1.1) translateY(-50%);
             }
         }
 
@@ -1061,8 +1068,7 @@ $colour3;
             right: 0;
             left: 0;
             top: 50%;
-            transform: translateY(-50%);
-            
+            transform: translateY(-50%);        
         }
     }
     // .partnersBox:first-child, .partnersBox:nth-child(2), .partnersBox:nth-child(3){border-right-color:#d5d5d5;border-bottom-color:#d5d5d5;}
@@ -1101,12 +1107,12 @@ $colour3;
         min-height:170px;
         margin:0;
         background-color: #fff;
-        -webkit-transition: all 1s;
-        -ms-transition: all 1s;
-        -o-transition: all 1s;
-        transition: all 1s;
+        -webkit-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        transition: all 1s ease;
         position: relative;
-        @include xsScreen{border: 1px solid #d5d5d5;margin: 0 auto;}
+        @include xsScreen {border: 1px solid #d5d5d5;margin: 0 auto;}
         &:hover{
             border: 1px solid #d5d5d5;
             cursor: pointer;
@@ -1115,7 +1121,8 @@ $colour3;
                 -ms-filter: grayscale(0%);
                 -o-filter: grayscale(0%);
                 filter: grayscale(0%);
-                opacity: 1;
+                opacity: 1;    
+                transform:scale(1.1,1.1) translateY(-50%);                      
             }
         }
 
@@ -1128,10 +1135,10 @@ $colour3;
             -ms-filter: grayscale(100%);
             -o-filter: grayscale(100%);
             filter: grayscale(100%);
-            -webkit-transition: all 1s;
-            -ms-transition: all 1s;
-            -o-transition: all 1s;
-            transition: all 1s;
+            -webkit-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            transition: all 1s ease;
             cursor: pointer;
             opacity: 0.5;
             position: absolute;;
@@ -1139,7 +1146,6 @@ $colour3;
             left: 0;
             top: 50%;
             transform: translateY(-50%);
-            
         }
     }
     
@@ -1163,6 +1169,11 @@ header{
     nav{
         .navbar-brand{position: relative;z-index: 999;}
     }
+}
+
+
+.colocation-service-hosting__content {
+    img.img-responsive{margin: 0 auto 25px;}
 }
 
 @-webkit-keyframes bounceAnim {

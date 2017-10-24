@@ -51,7 +51,7 @@ $(function(){
 
     // Typed
     $("#aniText").typed({
-        strings: ["FAST","ROBUST", "RELIABLE", "SCALABLE", "99.995% UPTIME"],
+        strings: ["LEADING","ROBUST", "TRUSTED"],
         typeSpeed: 180,
         loop: true,
         backDelay: 2000,

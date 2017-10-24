@@ -119,7 +119,7 @@
 
 input {
     font-size: 12px;
-    padding: 0.625em 0.625em 0.625em 0.3125em;
+    padding: 0.625em 2.825em 0.625em 0.3125em;
     color: #000;
     display: block;
     width: 12.75em;
@@ -129,7 +129,7 @@ input {
 
 textarea {
     font-size: 12px;
-    padding: 0.625em 0.625em 0.625em 0.3125em;
+    padding: 0.625em 2.825em 0.625em 0.3125em;
     color: #000;
     display: block;
     width: 100%;
@@ -176,21 +176,13 @@ label {
 
 
 /* active state */
-
 input:focus~label,
-input:valid~label {
-    top: -7px;
-    left: -2px;
-    font-size: 10px;
-    color: #065289;
-}
-
+input:valid~label,
 input[type="email"]:focus~label,
-input[type="email"]:valid~label,
-{
+input[type="email"]:valid~label{
     top: -7px;
     left: -2px;
-    font-size: 10px;
+    font-size: 11px;
     color: #065289;
 }
 
@@ -198,7 +190,7 @@ textarea:focus~label,
 textarea:valid~label {
     top: -14px !important;
     left: -2px;
-    font-size: 10px;
+    font-size: 11px;
     color: #065289;
 }
 
@@ -260,12 +252,13 @@ textarea:focus~.bar:after {
     text-align: center;
     border: none;
     border-radius: 30px;
-    width: 83%;
+    width: 85%;
     font-size: 14px;
     font-family: 'myriadPro-bold';
     float: right;
     -webkit-transition: 0.5s;
     transition: 0.5s;
+    padding: 8px 10px;
     &:hover {
         background-color: #ffd800;
         color: #065289;
