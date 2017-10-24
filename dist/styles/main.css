@@ -7041,7 +7041,8 @@ button.contact-submit-btn {
   background-position: center top;
   min-height: 630px;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: #0b4abe; }
   .banner .bannerText {
     font-family: "myriadPro-semibold";
     position: absolute;
