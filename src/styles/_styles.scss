@@ -427,6 +427,8 @@ section.abtUs {
             color: #302f2f;
             font-family: 'myriadPro-bold';
             text-align: center;
+
+            @include xssScreen {line-height: 1.5;margin-top: 5px}
         }
         p {
             margin-top: 25px;

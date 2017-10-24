@@ -10236,6 +10236,10 @@ section.abtUs {
     color: #302f2f;
     font-family: 'myriadPro-bold';
     text-align: center; }
+    @media (max-width: 480px) {
+      section.abtUs .timeline h4 {
+        line-height: 1.5;
+        margin-top: 5px; } }
   section.abtUs .timeline p {
     margin-top: 25px;
     color: #747474;
