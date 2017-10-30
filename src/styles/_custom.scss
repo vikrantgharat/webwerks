@@ -236,7 +236,7 @@
         background-repeat: no-repeat;
     }
     .serverSecWrap {
-        padding: 120px 0 0;
+        padding: 60px 0 0;
         background-image: url('../../src/img/bg-cloud.jpg');
         background-size: cover;
         background-position: top left;
@@ -249,6 +249,12 @@
         img.img-responsive {
             max-height: 560px;
             margin: 0 auto;
+        }
+        h2{
+            margin-bottom: 22px;
+            color: #06619c;
+            font-size: 32px;
+            font-family: 'myriadPro-bold';
         }
         .getQuoteWrap {
             position: absolute;
