@@ -99,7 +99,7 @@ header.header-bg .navbar-default {
             color: #555555;
             font-size: 16px;
             line-height: 22px;
-            width: 80%;
+            width: 100%;
             margin: 0 auto 26px;
             @include xsmScreen {
                 width: 80%;
@@ -265,7 +265,7 @@ header.header-bg .navbar-default {
 
         .feature-box {
             border: solid 1px #194f82;
-            min-height: 268px;
+            min-height: 300px;
             padding: 50px 10px 20px;
             width: 100%;
             margin-right: 6%;
@@ -321,6 +321,33 @@ header.header-bg .navbar-default {
         .feature-box {
             min-height: auto;
         }
+    }
+    .enterprise-vps-features{
+        .feature-box {
+            min-height: 300px;
+        }
+    }
+    .onyx-server-features{
+        .feature-box {
+            min-height: 250px;
+        }
+    }
+    .dubai-hosting-features{
+        .feature-box {
+            min-height: 280px;
+        }
+    }
+    .rapid-cloud-backup-feature{
+       .feature-box{ min-height:200px;}
+    }
+    .wordpress-cloud-hosting-feature{
+        .feature-box{ min-height:275px;}
+    }
+    .manage-firewall-service-feature{
+        .feature-box{ min-height:320px;}
+    }
+    .backup-storage-feature{
+        .feature-box{ min-height:380px;}
     }
 }
 

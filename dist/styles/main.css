@@ -3943,8 +3943,7 @@ tbody.collapse.in {
   .navbar-default .navbar-text {
     color: #777; }
   .navbar-default .navbar-nav > li > a {
-    color: #777;
-    font-size: 15px; }
+    color: #777; }
     .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
       color: #333;
       background-color: transparent; }
@@ -6122,7 +6121,7 @@ header.header-bg .navbar-default {
     color: #555555;
     font-size: 16px;
     line-height: 22px;
-    width: 80%;
+    width: 100%;
     margin: 0 auto 26px; }
     @media (min-width: 481px) and (max-width: 980px) {
       .middle-content .page-description p {
@@ -6257,7 +6256,7 @@ header.header-bg .navbar-default {
       margin-bottom: 50px; }
     .middle-content .features-content .feature-box {
       border: solid 1px #194f82;
-      min-height: 268px;
+      min-height: 300px;
       padding: 50px 10px 20px;
       width: 100%;
       margin-right: 6%;
@@ -6295,6 +6294,20 @@ header.header-bg .navbar-default {
           filter: invert(100%); }
   .middle-content .enterprise-vps-features .feature-box, .middle-content .onyx-server-features .feature-box, .middle-content .dubai-hosting-features .feature-box, .middle-content .auto-height-features .feature-box {
     min-height: auto; }
+  .middle-content .enterprise-vps-features .feature-box {
+    min-height: 300px; }
+  .middle-content .onyx-server-features .feature-box {
+    min-height: 250px; }
+  .middle-content .dubai-hosting-features .feature-box {
+    min-height: 280px; }
+  .middle-content .rapid-cloud-backup-feature .feature-box {
+    min-height: 200px; }
+  .middle-content .wordpress-cloud-hosting-feature .feature-box {
+    min-height: 275px; }
+  .middle-content .manage-firewall-service-feature .feature-box {
+    min-height: 320px; }
+  .middle-content .backup-storage-feature .feature-box {
+    min-height: 380px; }
 
 .features-carousel .owl-prev,
 .features-carousel .owl-next {
@@ -7709,7 +7722,7 @@ button.contact-submit-btn {
   margin-bottom: 20px; }
 
 .datacenters .features-content .feature-box {
-  min-height: 299px; }
+  min-height: 323px; }
 
 .datacenters .datacentersLocation div:first-child {
   border-right: solid 1px #dad9d9; }
@@ -7725,6 +7738,9 @@ button.contact-submit-btn {
   padding: 5px 35px 5px 35px;
   font-weight: 500; }
 
+.datacenters .page-description p {
+  width: 100%; }
+
 .datacenters .advantages {
   margin-top: 45px;
   font-size: 20px; }
@@ -7734,10 +7750,12 @@ button.contact-submit-btn {
     padding-right: 20px; }
     .datacenters .advantages .whyUs p {
       line-height: 1.6;
-      font-size: 1.8rem; }
+      font-size: 1.8rem;
+      font-size: 15px; }
   .datacenters .advantages .keyAdvantages {
     border-left: solid 1px #dad9d9;
-    padding-left: 35px; }
+    padding-left: 35px;
+    min-height: 460px; }
   .datacenters .advantages li {
     padding: 5px 35px 5px 35px;
     font-weight: 500;
@@ -8228,6 +8246,9 @@ header nav .navbar-brand {
         @media (max-width: 320px) {
           .custom-dropdown-menu .sub-dropdown:hover .sub-dropdown-menu li:first-child a:after {
             display: none; } }
+
+.awards-banner-inner-image {
+  fill: #ffffff; }
 
 @font-face {
   font-family: 'myriadPro-regular';
@@ -10442,7 +10463,7 @@ section.abtServices .box-heading h4 {
 section.abtServices .box-content {
   background-color: #fff;
   color: #151515;
-  height: 220px;
+  height: 290px;
   padding: 20px;
   overflow-y: scroll;
   -webkit-box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.11);
@@ -10453,7 +10474,7 @@ section.abtServices ul {
   margin: 0 10px; }
 
 section.abtServices .box-content li {
-  margin-bottom: 15px;
+  margin-bottom: 8px;
   padding-left: 75px;
   color: #151515;
   font-size: 15px; }
