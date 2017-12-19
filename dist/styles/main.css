@@ -3943,7 +3943,8 @@ tbody.collapse.in {
   .navbar-default .navbar-text {
     color: #777; }
   .navbar-default .navbar-nav > li > a {
-    color: #777; }
+    color: #777;
+    font-size: 15px; }
     .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
       color: #333;
       background-color: transparent; }
@@ -8249,6 +8250,10 @@ header nav .navbar-brand {
 
 .awards-banner-inner-image {
   fill: #ffffff; }
+
+.new-banner-img {
+  max-width: 350px;
+  width: 100%; }
 
 @font-face {
   font-family: 'myriadPro-regular';
