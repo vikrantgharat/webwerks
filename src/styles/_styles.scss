@@ -74,11 +74,19 @@
     -webkit-transition: 0.5s;
     transition: 0.5s;
 
+    @include xsScreen{
+        height: 50px;
+        padding-top: 10px;
+    }
+
     h3 {
         color: #065289;
         font-size: 22px;
         font-family: 'myriadPro-bold';
         text-transform: uppercase;
+        @include xsScreen{
+            display: none;
+        }
         span {
             display: block;
             -webkit-transform: rotate(90deg);

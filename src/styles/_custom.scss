@@ -19,7 +19,10 @@
         font-size: 40px;
         color: #fff;
         width: 100%;
-        z-index: 100;
+        z-index: 10;
+//        @include xsScreen{
+//            padding-right: 50px;
+//        }
         p {
             margin-top: 0;
             margin-bottom: 10px;

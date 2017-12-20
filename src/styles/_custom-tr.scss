@@ -40,6 +40,13 @@ header.header-bg .navbar-default {
                 -webkit-transform:none;
                 transform:none;
                 margin-top: 170px;
+                text-align: left;
+                padding-right: 45px;
+                h2{
+                    span{
+                        margin-bottom: 10px;
+                    }
+                }
             }
         h2 {
             color: $white;
