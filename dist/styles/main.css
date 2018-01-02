@@ -6338,8 +6338,7 @@ ul.feature-tabs li.active:after {
   padding: 0; }
 
 .grid li {
-  display: inline-block;
-  opacity: 0; }
+  display: inline-block; }
 
 .grid li.shown,
 .no-js .grid li,
@@ -6402,7 +6401,7 @@ ul.feature-tabs li.active:after {
     transform: translateY(0);
     opacity: 1; } }
 
-.news-grids li {
+.news-grids li .grid-content-wrap {
   text-align: left;
   border: solid 1px #d6d6d6;
   position: relative;

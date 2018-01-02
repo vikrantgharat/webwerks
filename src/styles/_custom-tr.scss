@@ -557,7 +557,7 @@ ul.feature-tabs li.active:after {
 
 .grid li {
     display: inline-block;
-    opacity: 0;
+//    opacity: 0;
 }
 
 .grid li.shown,
@@ -583,12 +583,14 @@ ul.feature-tabs li.active:after {
      }
 }
 /* 2 columns wide */
-.grid-item--width2 { width:50%;
+.grid-item--width2 { 
+    width:50%;
     @include xsScreen {
         width: 100%;
      }
 }
-.grid-item--width-3{width: 26%;
+.grid-item--width-3{
+    width: 26%;
   @include xsScreen {
     width: 100%;
  }
@@ -622,7 +624,7 @@ ul.feature-tabs li.active:after {
     }
 }
 
-.news-grids li {
+.news-grids li .grid-content-wrap{
     text-align: left;
     border: solid 1px #d6d6d6;
     position: relative;
